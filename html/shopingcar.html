@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>加入购入车</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/shopingcar.css">
+	<script src="../js/jQuery/jquery-1.12.4.min.js"></script>
+	<script src="../js/jQuery/jquery.cookie.js"></script>
+	<script src="../js/shopingcar.js"></script>
+</head>
+<body>
+<!-- head -->
+	<div class="cart_area_header">
+		<div class="w980" style="width: 1200px;">
+			<a href="../index.html" target="_blank" class="logo"></a>
+			<p>
+				<span id="js-user-info">
+					欢迎您，jedianakin！ 
+					<a href="/member/index" target="_blank">[会员管理]</a> 
+					<a class="loginout" href="/login?act=loginout">[安全退出]</a>
+				</span>
+				<ins class="step1">
+					<span class="one">1.选择商品</span>
+					<span class="two">2.确认订单信息</span>
+					<span class="three">3.成功提交订单</span>
+				</ins>
+			</p>
+		</div>
+		<i></i>
+	</div>
+	<!-- cart no goods -->
+	<div style="width: 1200px;" class="w980 area_no_shoe">
+		<div>
+			<i></i>
+			<strong class="yh">您的购物车中没有商品，赶快挑选商品吧！</strong>
+			<a href="../index.html" title="去首页逛逛"></a>
+		</div>
+	</div>
+	<!-- cart title -->
+	<div class="hasgoods w980 area_cart_title" style="width: 1200px;">
+		<strong class="yh">我的购物车</strong>
+		<span class="gray1"><span id="js-cart-num">2</span>/50</span>
+		<span class="gray2">您购物车的商品将被永久保存</span>
+		<p class="gray2 fr"><img src="../img/empty.gif" width="20" height="20">商品价格请以订单提交时为准</p>
+	</div>
+	<!-- goods ingo -->
+	<form id="form" class="hasgoods" action="/cart/trolly" method="post">
+		<table class="w980 gray2 area_goods_title" cellpadding="0" cellspacing="0" style="width: 1200px;">
+			<tbody>
+				<tr>
+					<th width="30" class="first">
+					<input class="js_select_all carttop on" name="business[self][businessid]" value="" >
+					</th>
+					<th width="95" align="left">全选</th>
+					<th width="318">商品名称</th>
+					<th>拍鞋价（元）</th>
+					<th width="180">数量</th>
+					<th width="170">小计（元）</th>
+					<th class="last" width="100">操作</th>
+				</tr>
+			</tbody>
+		</table>
+		<input name="act" value="index" type="hidden">
+		<table class="w980 gray2 area_business area_cart_business" cellpadding="0" cellspacing="0" style="width: 1200px;">
+			<tbody>
+				<tr>
+	                <th class="lf" style="text-align:left">
+						<input class="js_select_all input on">
+						<i class="paixie"></i>
+						<strong>拍鞋自营</strong>
+					</th>
+					<th class="rf gray2 f14">本店满129元，免邮费！</th>
+				</tr>
+			</tbody>
+		</table>
+		<table class="w980 gray2 area_business area_goods" cellpadding="0" cellspacing="0" style="width: 1200px;">
+			<tbody>
+    			<tr id="good_1" class="xbgs on">
+					<td class="first" width="30">
+						<input class="on" name="cb1" >
+					</td>
+					<td width="95">
+						<a href="javascript:;" class="public_goodimg8080" target="_blank">
+							<img src="">
+						</a>
+					</td>
+					<td width="318" class="lf" valign="center">
+						<a class="gray2" href="javascript:;" target="_blank">康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</a> 
+	                    <span class="red borbox"> 此商品不支持货到付款</span>
+						<a class="modify_colorsize" self="self" title="尺码：41码&nbsp;&nbsp;颜色：黑红">
+							<span>尺码：41码&nbsp;&nbsp;<br>颜色：黑红</span>
+							<i class="one"></i><i>修改</i>
+						</a>
+					</td>
+					<td>
+						<span class="price">0</span>
+					</td>
+					<td width="180">
+						<input type="hidden" value="560">
+						<a class="minus_num"></a>
+						<input max-num="26" type="text" value="" class="text num">
+						<a class="add_num"></a>
+					</td>
+					<td width="170">
+						<strong class="orange js_total"></strong>
+					</td>
+					<td width="100" class="last">
+						<a class="gray2 favorites" brandid="2093">移入收藏夹</a>
+						<br><a class="gray1 del">删除</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+
+	<!-- jiesuan -->
+	<div class="hasgoods w980" id="area_go_pay" style="position: relative; left: 50%; z-index: 100; margin-left: -600px; width: 1200px; bottom: 0px;">
+		<div class="area_go_pay">
+			<label class="xcartall">
+				<input name="" value="" class="js_select_all input on">
+				<a class="gray2" id="js_select-all">全选</a>
+			</label>
+			<a id="js_del">删除选中商品</a>
+			<a href="/">继续购物</a>
+			<a href="javascript:;" id="clear_cart">清空购物车</a>
+			已选 <b class="orange cart_size" id="js_cart_numt">6</b> 
+			件商品合计（不含运费）：<strong class="orange yh" id="js_total">￥894.00</strong>
+			<a id="js_go_pay" class="go_pay">去结算&gt;</a><!--go-nopay-->
+		</div>
+		<!-- 未选择商品 -->
+		<div style="" class="cart_minmsg cart_minmsg_one_line ">
+			<i class="tright"></i>
+			<i class="bright"></i>
+			<i class="bottom"></i>
+			<i style="" class="pointer pointer_t"></i>
+			<a class="close"></a>
+			<div>请先勾选商品再提交结算！</div>
+			<div>您确定要清空购物车？<br>&nbsp;<a>确定</a> | <a>取消</a></div>
+			<div>您确定要删除？<br>&nbsp;<a>确定</a> | <a>取消</a></div>
+		</div>
+	</div>
+	<!-- about -->
+	<div class="area_cart_footer" style="margin-top: 0px;">
+		<div class="w980" style="width: 1200px;">
+			<p>
+				<strong class="yh"><i></i>关于运费</strong>
+				<span class="gray1">拍鞋自营满129元免运费</span><br><a target="_blank" href="http://help.paixie.net/freight.html">更多运费信息</a>
+			</p>
+			<p>
+				<strong class="yh"><i></i>退换货政策</strong>
+				<span class="gray1">拍鞋网提供15天无理由免邮退换货服务</span><br><a target="_blank" href="http://help.paixie.net/shipping.html">查看具体信息</a>
+			</p>
+			<p>
+				<strong class="yh"><i></i>客户服务</strong>
+				<span class="gray1">需要帮助？请拨打</span><b class="orange">4008-81-82-83</b><br><span class="gray1">服务时间 8:00-23:30</span>
+			</p>
+		</div>
+	</div>
+	
+</body>
+</html>

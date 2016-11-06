@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎登陆</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script type="text/javascript" src="../js/jQuery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/jQuery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/function.js"></script>
+	<script type="text/javascript" src="../js/index.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="login_head">
+		<a href="../index.html"></a>
+		<h1>欢迎登陆</h1>
+	</div>
+	<div class="login_content">
+	
+		<div class="login_area">
+			<a class="ad" href="">
+				<img src="../img/login_ad.jpg" alt="">
+			</a>
+			<div class="form" id="form">
+				<p>
+					<strong class="yh f16">登录拍鞋平台</strong>
+					<a href="register.html">免费注册</a>
+					<span>还没有拍鞋网账号?</span>
+				</p>
+				<div class="user base_text">
+					<i class="username base_i"></i>
+					<span>手机号/邮箱</span>
+					<input type="text" class="user_input login_text ">
+					<a class="base_close"></a>
+				</div>
+				<div class="user_info">
+					<div class="v_txt">&nbsp;</div>
+				</div>
+				<div class="psw base_text">
+					<i class="password base_i"></i>
+					<span>请输入密码</span>
+					<input type="password" class="psw_input login_text ">
+					<a class="base_close"></a>
+				</div>
+				<div class="psw_info">
+					<div class="v_txt">&nbsp;</div>
+				</div>
+				<div class="auto_login">
+					
+					<label>
+						<input type="checkbox">
+						下次自动登录
+					</label>
+					<a class="forget" href="javascript:;">忘记密码?</a>
+					<a href="javascript:;" class="login_btn">登陆</a>
+				</div>
+
+				<div class="other_login">
+				你也可以使用以下账号登录：
+					<p>
+	                    <a title="使用qq账号登录拍鞋网" target="_top" href="javascript:;" class="qq"></a>
+						<a title="使用支付宝账号登录拍鞋网" target="_top" href="javascript:;" class="alipay"></a>
+						<a title="使用新浪账号登录拍鞋网" target="_top" href="javascript:;" class="sina"></a>
+						<a title="使用人人网账号登录拍鞋网" target="_top" href="javascript:;" class="renren"></a>
+						<a title="使用网易账号登录拍鞋网" target="_top" href="javascript:;" class="netease"></a>
+						<a title="使用迅雷账号登录拍鞋网" target="_top" href="javascript:;" class="xunlei"></a>
+						<a title="使用百度账号登录拍鞋网" target="_top" href="javascript:;" class="baidu"></a>
+						<a title="使用360账号登录拍鞋网" target="_top" href="javascript:;" class="qh360"></a>
+						<a title="使用微信扫码登录拍鞋网" target="_top" href="javascript:;" class="weixin"></a>
+						<a title="使用平安万里通登录拍鞋网" target="_top" href="javascript:;" class="wanlitong"></a>
+					</p>
+				</div>
+			</div>
+			<div class="wxbox" id="wxbox">		
+				<div class="error">
+					<i></i>
+					<b>登录失效</b><br>请刷新二维码后重新扫描
+				</div>
+				
+				<h2>用拍鞋网APP 扫码安全登录</h2>
+				<img src="../img/qrcodelogin.png">
+				<p>
+					<a href="javascript:void(0)">刷新二维码</a> | 
+						<a href="login.html" target="_blank"/>
+						使用帮助
+						<span style="display:block">
+							<i></i>扫描不上，版本过低？
+						</span>
+					</a>
+				</p>	
+				
+				<!--登录成功提示：-->
+				<div class="success">
+					<i></i>
+					<b>扫描成功！</b><br>
+					请在手机上确认是否受权登录<br>
+					使用他方式登录，请 <a href="javascript:void(0)">返回</a>
+				</div>	
+			</div>
+			<div class="way">
+				<a href="javascript:void(0)" class="erweima" id="way"></a>
+			</div>
+			
+		</div>
+	</div>
+	<div class="login_footer">
+		Copyright © 2007-2016 Paixie.net All Rights Reserved 
+		增值电信业务经营许可证：闽B2-20110084
+	</div>
+</body>
+</html>

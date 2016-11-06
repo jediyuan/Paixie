@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎注册</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/register.css">
+	<script type="text/javascript" src="../js/jQuery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/jQuery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/function.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+</head>
+<body>
+	<div class="reg_head">
+		<a href="../index.html" class="logo"></a>
+		<h1 >欢迎注册</h1>
+	</div>
+	<div class="reg_content">
+		<div class="reg_area">
+			<div class="form">
+				<div>
+					<label>账户名：</label>
+					<div class="base_text">
+						<span>邮箱/手机号</span>
+						<input type="text" class="reg_text reg_user">
+						<a class="base_close"></a>
+					</div>
+					<span class="noticeinfo">
+						<div class="v_text">请输入邮箱/手机号</div>
+					</span>
+				</div>
+				<div>
+					<label>设置密码：</label>
+					<div class="base_text">
+						<span></span>
+						<input type="password" class="reg_text reg_psw"/>
+						<a class="base_close"></a>
+					</div>
+					<span class="noticeinfo">
+						<div class="v_text">6-20位字符，可使用字母、数字或符号的组合</div>
+						<!-- <div class="v_text"><i class="v_ok"></i></div> -->
+					</span>
+					<div class="password_strength">
+						<span class="now">弱</span>
+						<span class="">中</span>
+						<span class="last">强</span>
+					</div>
+				</div>
+				<div>
+					<label>确认密码：</label>
+					<div class="base_text">
+						<span></span>
+						<input type="password" class="reg_text reg_pswSec">
+						<a class="base_close"></a>
+					</div>
+					<span class="noticeinfo ">
+						<div class="v_text">请再次输入密码</div>
+					</span>
+				</div>
+				
+
+				<div class="codearea">
+					<label >验证码：</label>
+					<div class="base_text code_num">
+						<span>验证码</span>
+						<input type="text" class="reg_text code_input">
+						<a class="base_close"></a>
+					</div>
+					<a class="input_button">获取短信验证码</a>
+					<span class="noticeinfo" style="height:0">
+						<div class="v_text">&nbsp;hhhhhhhhhhhh</div>
+						<!-- <div class="v_error">请填写验证码</div> -->
+					</span>
+				</div>
+
+				<div class="agreement">
+					<label>
+						<input type="checkbox">
+						我已阅读并同意
+					</label>
+					<a href="/servicepolicy.html" target="_blank" class="agree">《拍鞋服务协议》</a>
+				</div>
+				<a class="blue_button">立即注册</a>	
+			</div>
+			<div class="side">
+				我已有拍鞋网账户<br>
+				现在就 <a href="login.html">立即登录</a>
+			</div>
+		</div>
+	</div>
+	<div class="reg_footer">
+		Copyright © 2007-2016 Paixie.net All Rights Reserved 增值电信业务经营许可证：闽B2-20110084
+	</div>
+</body>
+</html>

@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/goodInfo.css">
+	<script type="text/javascript" src="../js/jQuery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/jQuery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/goodsInfo.js"></script>
+	<script type="text/javascript" src="../js/index.js" charset="utf-8"></script>
+	
+</head>
+<body>
+	<!-- side_right -->
+	<div class="r_side">
+		<div class="r_side_top">
+			<span class="all_cart">
+				<a class="cart_guide" href="javascript:;">
+					<span>购物车</span>
+					<i>0</i>
+				</a>
+				<div class="cart_box">
+					<div class="nogoods">
+						<span></span>
+						<p>主人，不要太小气嘛，多放点商品来陪伴我吧 
+							<a href="index.html">去挑选</a>
+						</p>
+					</div>	
+				</div>
+				<div class="cart_goods"></div>
+			</span>
+			<span class="all_txt_r">
+				<a class="all_r_news" href="javascript:;"></a>
+				<div class="all_r_box">优惠信息</div>
+			</span>
+			<span class="all_txt_r">
+				<a class="all_r_history" href="javascript:;"></a>
+				<div class="all_r_box">历史记录</div>
+			</span>
+			<span class="all_txt_r">
+				<a class="all_r_kefu" href="javascript:;"></a>
+				<div class="all_r_box">在线客户</div>
+			</span>
+		</div>
+		<div class="r_side_foot">
+			<span>
+				<a class="side_qr" href="javascript:;"></a>
+				<div class="side_qr_con">
+					<span class="show_qr"></span>
+				</div>
+			</span>
+			<span>
+				<a class="side_totop" href="javascript:;"></a>
+				<div class="totop">返回顶部</div>
+				
+			</span>
+		</div>
+	</div>
+	<!-- 顶部菜单 -->
+	<div class="header">
+		<!-- head_top -->
+		<div class="head_top">
+			<div class="top_con">
+				<div class="head_top_l fl">
+					<a class="head_phone" href="javascript:;"></a>
+					<p id="loginOut">
+						<span class="welcome">您好，欢迎来到拍鞋网！</span>
+						<a href="html/login.html" class="login"></a>
+						<a href="html/register.html" class="reg">免费注册</a>
+					</p>
+				</div>
+				<div class="head_top_r fr">
+					<span class="cart">
+						<a href="javascript:;">
+							<i class="cart_bg"></i>购物车
+							<b class="cart_num">0</b>
+						</a>
+						<div class="cart_info">
+							<b class="nogoods">您还没有购买任何商品，快去挑选把！</b>
+						</div>
+					</span>
+					<i class="head_r_line"></i>
+
+					<span class="mypaixie">
+						<a href="javascript:;">
+							我的拍鞋
+							<i></i>
+						</a>
+						<ul class="paixe_ul">
+							<li><a href="javascript:;">我的订单</a></li>
+							<li><a href="javascript:;">我的收藏</a></li>
+							<li><a href="javascript:;">我的优惠券</a></li>
+						</ul>
+					</span>
+					<i class="head_r_line"></i>
+
+					<span class="msg">
+						<a href="javascript:;">
+							<i>消息</i>
+							<b class="msg_num">0</b>
+						</a>
+					</span>
+					<i class="head_r_line"></i>
+
+					<span class="club">
+						<a href="javascript:;">会员俱乐部</a>
+					</span>
+					<i class="head_r_line"></i>
+
+					<span class="top_nav" style="width:85px;">
+						<a href="javascript:;">
+							网站导航<i></i>
+						</a>
+						<ul class="nav_ul" style="width:72px;">
+							<li><a href="javascript:;">商家入驻</a></li>
+							<li><a href="javascript:;">了解拍鞋网</a></li>
+							<li><a href="javascript:;">拍鞋公益</a></li>
+							<li><a href="javascript:;">网站地图</a></li>
+							<li><a href="javascript:;">新手帮助</a></li>
+						</ul>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- head_mid -->
+		<div class="head_mid">
+			<div class="head_logo">
+				<a href="../index.html"></a>
+			</div>
+			<div class="head_ad"></div>
+			<div class="search">
+				<form action="javascript:;">
+					<input type="text" class="search_area"/>
+					<button type="submit" class="btn">搜索</button>
+					<div class="head_solist" id="head_solist">
+						<ul class="searchul">
+							
+						</ul>
+					</div>
+				</form>
+				<div class="hot_search">
+					<a href="javascript:;" class="red1">开学大促</a>
+					<a href="javascript:;">跑步鞋</a>
+					<a href="javascript:;">男士凉鞋</a>
+					<a href="javascript:;" class="red1">女士凉鞋</a>
+					<a href="javascript:;">小白鞋</a>
+					<a href="javascript:;">百搭T恤</a>
+					<a href="javascript:;" class="red1">达芙妮59元2双</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- head_nav -->
+		<div class="head_nav">
+			<div class="head_con">
+				<div class="all_goods" id="all_goods">
+					<a  class="goodsInfoSort" href="javascript:;">全部商品分类</a>
+					<div class="addLine">
+						
+					</div>
+					<div class="con_nav" id="con_nav" style="display:none">
+						<ul class="nav_list">
+							<li>
+								<span class="goods_title">
+									<h3>
+									<i class="sport"></i>运动馆</h3>
+								</span>
+								<p class="goods_sort">
+									<a href="javascript:;">板鞋</a>
+									<a href="javascript:;">跑步鞋</a>
+									<a href="javascript:;">休闲鞋</a>
+									<a href="javascript:;">篮球鞋</a>
+								</p>
+								<div class="nav_box hide">
+									<div class="nav_box_right">
+										<a class="close" href="javascript:;"></a>
+										<span class="nav_img">
+											<a href="javascript:;"><img src="img/nav_img_1.jpg" alt=""></a>
+										</span>
+									</div>
+									<div class="nav_box_left">
+										<h3 class="nav_left_tit">运动鞋</h3>
+										<span>
+											<a href="http://www.paixie.net/p-m000001s000028_1.html#yun">跑步鞋</a>
+		 									<a href="http://www.paixie.net/p-m000001s000025_1.html#yun">板鞋</a>
+		 									<a href="http://www.paixie.net/p-m000001s000014_1.html#yun">篮球鞋</a>
+		 									<a href="http://www.paixie.net/p-m000001s000022_1.html#yun">运动休闲鞋</a>
+		 									<a href="http://www.paixie.net/p-m000001s000055_1.html#yun">综训鞋</a>
+		 									<a href="http://www.paixie.net/p-m000001s000064_1.html#yun">帆布鞋</a>
+		 									<a href="http://www.paixie.net/p-m000001s000007_1.html#yun">足球鞋</a>
+		 									<a href="http://www.paixie.net/p-m000001s000029_1.html#yun">网球鞋</a>
+		 									<a href="http://www.paixie.net/p-_复古鞋__1.html#yun">复古鞋</a>
+		 								</span>
+		 								<h3>运动服</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000178s000184_1.html#yun">运动T恤</a>
+											<a href="http://www.paixie.net/p-m000178s000192_1.html#yun">运动POLO衫</a>
+											<a href="http://www.paixie.net/p-m000178s000185_1.html#yun">卫衣套头衫</a>
+											<a href="http://www.paixie.net/p-m000178s000191_1.html#yun">运动套装</a>
+											<a href="http://www.paixie.net/p-m000178s000186_1.html#yun">运动风衣</a>
+											<a href="http://www.paixie.net/p-m000178s000187_1.html#yun">夹克</a>
+											<a href="http://www.paixie.net/p-m000178s000195_1.html#yun">短裤</a>
+										</span>
+		 								<h3>潮流运动</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m0001_1.html#yun">运动鞋</a>
+		 									<a href="http://www.paixie.net/originals/#yun">三叶草</a>
+		 									<a href="http://www.paixie.net/p-m000217s000228_1.html#yun">潮流包包</a>
+		 									<a href="http://www.paixie.net/p-adidas__m000001_1.html#url:/p-adidas__m000001_id_1.html#yun">阿迪新款</a>
+		 									<a href="http://www.paixie.net/p-nikePXnike360PXerke_阿甘__1.html#yun#yun">阿甘系列</a>
+		 									<a href="http://www.paixie.net/forbid/p-__23879_de;1.html#yun">AIR MAX</a>
+		 									<a href="http://www.paixie.net/forbid/p-nike__m000001_1.html#yun">耐克爆款</a>
+		 								</span>
+		 								<h3>运动配件</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000435s000449_sd_1.html#yun">瑜伽用品</a>
+		 									<a href="http://www.paixie.net/p-m000217s000228_1.html#yun">双肩背包</a>
+		 									<a href="http://www.paixie.net/p-m000217s000228_1.html#yun">单肩包</a>
+		 									<a href="http://www.paixie.net/p-m000217s000237_1.html#yun">运动袜子</a>
+		 									<a href="http://www.paixie.net/p-m000217s000240_1.html#yun">运动帽</a>
+		 									<a href="http://www.paixie.net/p-m000217s000241_1.html#yun">运动护具</a>
+		 									<a href="http://www.paixie.net/p-m000217s000224_1.html#yun">休闲包</a>
+		 									<a href="http://www.paixie.net/p-m000217s000229_1.html#yun">手套</a>
+		 								</span>
+		 								<h3>价格搜索区间</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000001p00001z__1.html#yun">0-99</a>
+		 									<a href="http://www.paixie.net/p-__m000001p01A037_de_1.html#yun">100-199</a>
+		 									<a href="http://www.paixie.net/p-__m000001p03804H_de_1.html#yun">200-299</a>
+		 									<a href="http://www.paixie.net/p-__m000001p04I06f_de_1.html#yun">300-399</a>
+		 									<a href="http://www.paixie.net/p-__m000001p06g07P_de_1.html#yun">400-499</a>
+		 								</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="goods_title">
+									<h3>
+									<i class="women"></i>女鞋馆</h3>
+								</span>
+								<p class="goods_sort">
+									<a href="javascript:;">夏季新品</a>
+									<a href="javascript:;">凉鞋</a>
+									<a href="javascript:;">单鞋</a>
+									<a href="javascript:;">休闲鞋</a>
+								</p>
+								<div class="nav_box hide">
+									<div class="nav_box_right">
+										<a class="close" href="javascript:;"></a>
+										<span class="nav_img">
+											<a href="javascript:;"><img src="img/nav_img_2.jpg" alt=""></a>
+										</span>
+									</div>
+									<div class="nav_box_left">
+										<h3 class="nav_left_tit">热销品牌</h3>
+										<span>
+											<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+		 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+		 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+		 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+		 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+		 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+		 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+		 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+		 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+		 								</span>
+		 								<h3>热门推荐</h3>
+		 								<span>
+											<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+		 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+		 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+		 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+		 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+		 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+		 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+		 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+		 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+		 								</span>
+		 								<h3>凉鞋</h3>
+		 								<span>
+											<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+		 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+		 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+		 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+		 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+		 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+		 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+		 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+		 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+		 								</span>
+		 								<h3>单鞋</h3>
+		 								<span>
+											<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+		 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+		 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+		 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+		 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+		 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+		 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+		 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+		 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+		 								</span>
+		 								<h3>休闲鞋</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000003s000135_1.html#url:/p-__m000003s000135_id_1.html#yun">新品</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000069_1.html#yun">系带</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000074_1.html#yun">套脚</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000071_1.html#yun">拉链</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000075_1.html#yun">松紧带</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000070_1.html#yun">魔术贴</a>
+		 								</span>
+		 								<h3>价格搜索区间</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000003p00001z__1.html#yun">0-99</a>
+		 									<a href="http://www.paixie.net/p-__m000003p01A037__1.html#yun">100-199</a>
+		 									<a href="http://www.paixie.net/p-__m000003p03804H__1.html#yun">200-299</a>
+		 									<a href="http://www.paixie.net/p-__m000003p04I06f__1.html#yun">300-399</a>
+		 									<a href="http://www.paixie.net/p-__m000003p06g07P__1.html#yun">400-499</a>
+		 								</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="goods_title">
+									<h3>
+									<i class="man"></i>男鞋馆</h3>
+								</span>
+								<p class="goods_sort">
+									<a href="javascript:;">凉鞋</a>
+									<a href="javascript:;">休闲鞋</a>
+									<a href="javascript:;">帆布鞋</a>
+									<a href="javascript:;">豆豆鞋</a>
+								</p>
+								<div class="nav_box hide">
+									<div class="nav_box_right">
+										<a class="close" href="javascript:;"></a>
+										<span class="nav_img">
+											<a href="javascript:;"><img src="img/nav_img_3.jpg" alt=""></a>
+										</span>
+									</div>
+									<div class="nav_box_left">
+										<h3 class="nav_left_tit">热销品牌</h3>
+										<span>
+											<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+		 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+		 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+		 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+		 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+		 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+		 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+		 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+		 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+		 								</span>
+		 								<h3>热门推荐</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000003s000012_1.html#yun">凉鞋</a>
+		 									<a href="http://www.paixie.net/p-m000003s000161_1.html#yun">帆布鞋</a>
+		 									<a href="http://www.paixie.net/forbid/p-_%E5%B0%8F%E7%99%BD%E9%9E%8B__1.html#yun">小白鞋</a>
+		 									<a href="http://www.paixie.net/p-m000003s000216_1.html#yun">松糕鞋</a>
+		 									<a href="http://www.paixie.net/p-_乐福鞋__1.html#yun">乐福鞋</a>
+		 								</span>
+		 								<h3>凉鞋</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000003s0000120013865_1.html#yun">平底</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0000120006648_1.html#yun">中低跟</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0000120006655_1.html#yun">高跟</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0000120006620_1.html#yun">鱼嘴</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0000120000981_1.html#yun">一字扣</a>
+		 								</span>
+		 								<h3>单鞋</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000003s0000170000069_1.html#yun">系带</a>
+											<a href="http://www.paixie.net/p-__m000003s0000170000074_1.html#yun">套脚</a>
+											<a href="http://www.paixie.net/p-__m000003s0000170000071_1.html#yun">拉链</a>
+											<a href="http://www.paixie.net/p-__m000003s0000170000413_1.html#yun">休闲风</a>
+											<a href="http://www.paixie.net/p-__m000003s0000170000418_1.html#yun">欧美风</a>
+											<a href="http://www.paixie.net/p-__m000003s0000170000420_1.html#yun">英伦风</a>
+										</span>
+		 								<h3>休闲鞋</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000003s000135_1.html#url:/p-__m000003s000135_id_1.html#yun">新品</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000069_1.html#yun">系带</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000074_1.html#yun">套脚</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000071_1.html#yun">拉链</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000075_1.html#yun">松紧带</a>
+		 									<a href="http://www.paixie.net/p-__m000003s0001350000070_1.html#yun">魔术贴</a>
+		 								</span>
+		 								<h3>价格搜索区间</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000003p00001z__1.html#yun">0-99</a>
+		 									<a href="http://www.paixie.net/p-__m000003p01A037__1.html#yun">100-199</a>
+		 									<a href="http://www.paixie.net/p-__m000003p03804H__1.html#yun">200-299</a>
+		 									<a href="http://www.paixie.net/p-__m000003p04I06f__1.html#yun">300-399</a>
+		 									<a href="http://www.paixie.net/p-__m000003p06g07P__1.html#yun">400-499</a>
+		 								</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="goods_title">
+									<h3>
+									<i class="cloth"></i>服饰馆</h3>
+								</span>
+								<p class="goods_sort">
+									<a href="javascript:;">女装</a>
+									<a href="javascript:;">男装</a>
+									<a href="javascript:;">人气美裙</a>
+									<a href="javascript:;">牛仔短裤</a>
+								</p>
+								<div class="nav_box hide">
+									<div class="nav_box_right">
+										<a class="close" href="javascript:;"></a>
+										<span class="nav_img">
+											<a href="javascript:;"><img src="img/nav_img_4.jpg" alt=""></a>
+										</span>
+									</div>
+									<div class="nav_box_left">
+										<h3 class="nav_left_tit">热销品牌</h3>
+										<span>
+											<a href="http://mall31196.paixie.net/#yun">泰芝郎</a>
+		 									<a href="http://www.paixie.net/sxming/#yun">斯鑫明</a>
+		 									<a href="http://mall31107.paixie.net/#yun">花花公子</a>
+		 									<a href="http://fanzhelun.paixie.net/#yun">Qigirl</a>
+		 									<a href="http://danleisi.paixie.net/#yun">丹雷斯</a>
+		 									<a href="http://www.paixie.net/weiwei/#yun">唯唯</a>
+		 									<a href="http://www.paixie.net/gejiani/#yun">戈佳妮</a>
+		 								</span>
+		 								<h3>热门推荐</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000332s000349_1.html#yun">连衣裙</a>
+		 									<a href="http://www.paixie.net/p-_T恤___1.html#yun">T恤</a>
+		 									<a href="http://www.paixie.net/p-m000265s000267_1.html#yun">衬衫</a>
+		 									<a href="http://www.paixie.net/p-m000265s000515_1.html#yun">短裤</a>
+		 									<a href="http://www.paixie.net/p-m000265s000274_1.html#yun">牛仔裤</a>
+		 									<a href="http://www.paixie.net/p-m000459s000471_1.html#yun">文胸</a>
+		 								</span>
+		 								<h3>男装</h3>
+		 								<span>
+											<a href="http://www.paixie.net//p-__m000265s000279_id_1.html#yun">T恤</a>
+											<a href="http://www.paixie.net/p-m000265s000267_1.html#yun">衬衫</a>
+											<a href="http://www.paixie.net/p-m000265s000276_1.html#yun">POLO衫</a>
+											<a href="http://www.paixie.net/p-m000265s000266_1.html#yun">背心</a>
+											<a href="http://www.paixie.net/p-m000265s000274_1.html#yun">牛仔裤</a>
+											<a href="http://www.paixie.net/p-m000265s000281_1.html#yun">休闲裤</a>
+										</span>
+		 								<h3>女装</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000332_1.html#yun">夏上新</a>
+		 									<a href="http://www.paixie.net/p-m000332s000341_1.html#yun">衬衫</a>
+		 									<a href="http://www.paixie.net/p-m000332s000359_1.html#yun">T恤</a>
+		 									<a href="http://www.paixie.net/p-__m000332s000340_1.html#yun">半身裙</a>
+		 									<a href="http://www.paixie.net/p-__m000332s000349_id_1.html#yun">连衣裙</a>
+		 									<a href="http://www.paixie.net/p-m000332s000352_1.html#yun">针织衫</a>
+		 									<a href="http://www.paixie.net/p-m000332s000344_1.html#yun">风衣</a>
+		 								</span>
+		 								<h3>春季单品</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000386_1.html#url:/p-__m000386_id_1.html#yun">童装</a>
+		 									<a href="http://www.paixie.net/p-m000265s000276_1.html#yun">POLO衫</a>
+		 									<a href="http://www.paixie.net/p-m000265s000274_1.html#yun">牛仔裤</a>
+		 									<a href="http://www.paixie.net/p-m000459s000493_1.html#yun">睡衣/家居服</a>
+		 								</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="goods_title">
+									<h3>
+									<i class="out"></i>户外馆</h3>
+								</span>
+								<p class="goods_sort">
+									<a href="javascript:;">登山鞋</a>
+									<a href="javascript:;">休闲鞋</a>
+									<a href="javascript:;">溯溪鞋</a>
+									<a href="javascript:;">户外鞋</a>
+								</p>
+								<div class="nav_box hide">
+									<div class="nav_box_right">
+										<a class="close" href="javascript:;"></a>
+										<span class="nav_img">
+											<a href="javascript:;"><img src="img/nav_img_5.jpg" alt=""></a>
+										</span>
+									</div>
+									<div class="nav_box_left">
+										<h3 class="nav_left_tit">热卖推荐</h3>
+										<span>
+											<a href="http://www.paixie.net/p-__m000006_id_1.html#yun">户外新品</a>
+		 									<a href="http://www.paixie.net/p-m000006s000049_1.html#yun">登山鞋</a>
+		 									<a href="http://www.paixie.net/p-m000006s000046_1.html#yun">户外休闲鞋</a>
+		 									<a href="http://www.paixie.net/p-m000006s000170_1.html#yun">溯溪鞋</a>
+		 									<a href="http://www.paixie.net/p-m000006s000011_1.html#yun">沙滩鞋</a>
+		 									<a href="http://www.paixie.net/p-m000217_1.html#yun">户外配件</a>
+		 								</span>
+		 								<h3>户外服饰</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000290s000303_1.html#yun">皮肤衣</a>
+		 									<a href="http://www.paixie.net/p-m000290s000321_1.html#yun">速干T恤</a>
+		 									<a href="http://www.paixie.net/p-m000290s000323_1.html#yun">速干裤</a>
+		 									<a href="http://www.paixie.net/p-m000290s000319_1.html#yun">户外套装</a>
+		 									<a href="http://www.paixie.net/p-m000435s000441_1.html#yun">泳衣</a>
+		 								</span>
+		 								<h3>特惠推荐</h3>
+		 								<span>
+											<a href="http://bepure.paixie.net/#yun">宝飘旗舰店</a>
+											<a href="http://tripolar.paixie.net/#yun">Tri-polar旗舰店</a>
+											<a href="http://tulu.paixie.net/#yun">探拓者</a>
+											<a href="http://www.paixie.net/mufeng/#yun">穆峰</a>
+										</span>
+		 								<h3>价格搜索区间</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000006p00001z__1.html#yun">0-99</a>
+		 									<a href="http://www.paixie.net/p-__m000006p01A037__1.html#yun">100-199</a>
+		 									<a href="http://www.paixie.net/p-__m000006p03804H__1.html#yun">200-299</a>
+		 									<a href="http://www.paixie.net/p-__m000006p04I06f__1.html#yun">300-399</a>
+		 									<a href="http://www.paixie.net/p-__m000006p06g07P__1.html#yun">400-499</a>
+		 								</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="goods_title">
+									<h3>
+									<i class="child"></i>儿童馆</h3>
+								</span>
+								<p class="goods_sort">
+									<a href="javascript:;">新品童鞋</a>
+									<a href="javascript:;">凉鞋</a>
+									<a href="javascript:;">运动鞋</a>
+									<a href="javascript:;">帆布鞋</a>
+								</p>
+								<div class="nav_box hide" style="top:151px;">
+									<div class="nav_box_right">
+										<a class="close" href="javascript:;"></a>
+										<span class="nav_img">
+											<a href="javascript:;"><img src="img/nav_img_6.jpg" alt=""></a>
+										</span>
+									</div>
+									<div class="nav_box_left">
+										<h3 class="nav_left_tit">热销品牌</h3>
+										<span>
+											<a href="http://mimixiong.paixie.net/#yun">咪咪熊</a>
+		 									<a href="http://bitelong.paixie.net/#yun">比特龙</a>
+		 									<a href="http://mall31207.paixie.net/#yun">吉吉猴</a>
+		 									<a href="http://www.paixie.net/p-361children_m0004_id;1.html#yun">361度</a>
+		 									<a href="http://www.paixie.net/p-erke__m0004_de;1.html#yun">鸿星尔克</a>
+		 								</span>
+		 								<h3>热卖推荐</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000004s000122_1.html#yun">凉鞋</a>
+		 									<a href="http://www.paixie.net/p-_公主鞋__1.html#yun">公主鞋</a>
+		 									<a href="http://www.paixie.net/p-m000004s000121_1.html#yun">儿童运动鞋</a>
+		 									<a href="http://www.paixie.net/p-m000004s000124_1.html#yun">童皮鞋</a>
+		 									<a href="http://www.paixie.net/p-m000004s000115_1.html#yun">学步鞋</a>
+		 									<a href="http://www.paixie.net/p-__m0003860000590_1.html#yun">男童装</a>
+		 									<a href="http://www.paixie.net/p-__m0003860000591_1.html#yun">女童装</a>
+		 								</span>
+		 								<h3>童鞋</h3>
+		 								<span>
+											<a href="http://mall31207.paixie.net/#yun">凉鞋</a>
+											<a href="http://www.paixie.net/p-m000004s000121_1.html#yun">运动鞋</a>
+											<a href="http://www.paixie.net/p-m000004s000123_1.html#yun">帆布鞋</a>
+											<a href="http://www.paixie.net/p-m000004s000124_1.html#yun">童皮鞋</a>
+											<a href="http://www.paixie.net/p-m000004s000168_1.html#yun">亲子鞋</a>
+											<a href="http://www.paixie.net/p-_公主鞋__1.html#yun">公主鞋</a>
+											<a href="http://www.paixie.net/p-_全能鞋__1.html#yun">全能鞋</a>
+										</span>
+		 								<h3>童装</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-m000386s000405_1.html#yun">T恤</a>
+		 									<a href="http://www.paixie.net/p-m000386s000387_1.html#yun">衬衫</a>
+		 									<a href="http://www.paixie.net/p-m000386s000403_1.html#yun">裙子</a>
+		 									<a href="http://www.paixie.net/p-m000386s000406_1.html#yun">套装</a>
+		 									<a href="http://www.paixie.net/p-m000386s000396_1.html#yun">裤子</a>
+		 									<a href="http://www.paixie.net/p-m000386s000408_1.html#yun">外套</a>
+		 								</span>
+		 								<h3>价格搜索区间</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000004p00001z__1.html#yun">0-99</a>
+		 									<a href="http://www.paixie.net/p-__m000004p01A037__1.html#yun">100-199</a>
+		 									<a href="http://www.paixie.net/p-__m000004p03804H__1.html#yun">200-299</a>
+		 								</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="goods_title">
+									<h3>
+									<i class="box_bag"></i>箱包馆</h3>
+								</span>
+								<p class="goods_sort">
+									<a href="javascript:;">男包</a>
+									<a href="javascript:;">女包</a>
+									<a href="javascript:;">旅行箱包</a>
+									<a href="javascript:;">精品家纺</a>
+								</p>
+								<div class="nav_box hide" style="top:151px;">
+									<div class="nav_box_right">
+										<a class="close" href="javascript:;"></a>
+										<span class="nav_img">
+											<a href="javascript:;"><img src="img/nav_img_6.jpg" alt=""></a>
+										</span>
+									</div>
+									<div class="nav_box_left">
+										<h3 class="nav_left_tit">热销品牌</h3>
+										<span>
+											<a href="http://www.paixie.net/ruishijundao/#yun">瑞士军刀</a>
+		 									<a href="http://www.paixie.net/ukuk/#yun">优客优可</a>
+		 									<a href="http://danjue.paixie.net/#yun">丹爵</a>
+		 									<a href="http://mall31187.paixie.net/#yun">代代花枳</a>
+		 									<a href="http://www.paixie.net/boliyashi/#yun">柏丽雅诗</a>
+		 									<a href="http://www.paixie.net/yulu/#yun">玉鹭</a>
+		 									<a href="http://www.paixie.net/langsha/#yun">浪莎</a>
+		 								</span>
+		 								<h3>女包</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-_女包__id_1.html#yun">上新</a>
+		 									<a href="http://www.paixie.net/p-_女+钱包__id;1.html#yun">钱包</a>
+		 									<a href="http://www.paixie.net/temai/5111.html#yun">手提包</a>
+		 									<a href="http://www.paixie.net/temai/5109.html#yun">单肩包</a>
+		 									<a href="http://www.paixie.net/p-__m000217s0002280001085_1.html#yun">双肩包</a>
+		 									<a href="http://wwwhttp://www.paixie.net/p-m000177s000206_1.html#yun">旅行箱</a>
+		 								</span>
+		 								<h3>男包</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-_男包__id_1.html#yun">新品</a>
+		 									<a href="http://www.paixie.net/p-m000217s000236_1.html#yun">腰包</a>
+		 									<a href="http://www.paixie.net/p-_男钱包__1.html#yun">钱包</a>
+		 									<a href="http://www.paixie.net/p-_男商务包__1.html#yun">商务包</a>
+		 									<a href="http://www.paixie.net/p-_男双肩包__1.html#yun">双肩包</a>
+		 									<a href="http://www.paixie.net/p-m000177s000206_1.html#yun">旅行箱</a>
+		 								</span>
+		 								<h3>家纺</h3>
+		 								<span>
+											<a href="http://www.paixie.net/p-__m000511_id_1.html#yun">新品</a>
+		 									<a href="http://www.paixie.net/p-m000513s000521_1.html#yun">床上用品</a>
+		 									<a href="http://www.paixie.net/p-m000513s000539_1.html#yun">婴童床品</a>
+		 									<a href="http://www.paixie.net/p-m000513s000563_1.html#yun">蚊帐</a>
+		 									<a href="http://www.paixie.net/p-m000513s000523_1.html#yun">床上多件套</a>
+		 									<a href="http://www.paixie.net/p-m000513s000527_1.html#yun">靠枕/枕头</a>
+		 								</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="all_nav">
+					<a href="../index.html">首页</a>
+					<a href="javascript:;">爱团购</a>
+					<a href="javascript:;">
+						<i class="hot"></i>闪购</a>
+					
+					<a href="javascript:;">
+						<i class="new"></i>今日特价</a>
+
+					<div class="head_qr">
+						<a href="javascript:;" title="拍鞋APP"></a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<!--  商品详情 -->
+	<div class="pmain clear">
+		<!-- weizhi -->
+		<div class="location">
+			<a href="/" title="拍鞋首页">拍鞋首页</a> 〉
+		  		<a href="/kangta/" title="康踏官方网站">康踏官方网站</a> &gt;
+			<a href="/kangta/home-1-28-0-0-0-0-1.html">康踏跑步鞋</a>
+		</div>
+		<!-- 右侧公告 -->
+		<div class="pside">
+				<!--自营-->
+			<div class="self">
+				<a class="self_logo" href="/kangta/" target="_blank"><img src="../img/pside_1.jpg" height="50" onerror="this.src=''" style="opacity: 1;">康踏(KANGTA)</a>
+				<a class="self_customer_service" target="_blank" href="http://b.qq.com/webc.htm?new=0&amp;sid=800082013&amp;o=www.paixie.net&amp;q=7"><i></i>在线客服</a>
+			</div>
+			<!--服务承诺-->
+			<dl class="pledges">
+				<dt>服务承诺</dt>
+					<!--自营-->
+				<dd><i class="genuine"></i>正品保证 假一赔十</dd>
+				<dd><i class="returns"></i>15天无理由免邮退换货</dd>
+				<dd><i class="difference"></i>10天保值 差价返还</dd>			
+			</dl>
+			
+			<!--最近浏览的商品-->
+			<div class="recent_list">
+				<h3><p><span>最近浏览的商品</span></p></h3>
+				<ul class="js_recent">
+					<li>
+						<a class="img160" target="_blank" href=""><dfn></dfn><img src="../img/recent_1.jpg" alt="康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W"></a>
+						<div><span class="oof">￥</span>149.00</div>
+					</li>
+						<li><a class="img160" target="_blank" href=""><dfn></dfn><img src="../img/recent_1.jpg" alt="NewBalance 新百伦 574系列男低帮系带耐鞋复古跑步鞋 蓝色/黑色 ML574OIA"></a>
+						<div><span class="oof">￥</span>499.00</div>
+					</li>
+				</ul>
+			</div>
+
+			<!--最近收藏的商品-->
+			<div class="recent_list">
+				<h3><p><span>最近收藏的商品</span></p></h3>
+				<ul class="js_collections"><li style="text-align:center; color:#999; line-height:24px;">没有收藏商品</li></ul>
+			</div>
+		</div>
+		<!-- 左侧图片 -->
+		<div class="proImg">
+			<div class="bigImg" id="js_bigImg" style="position: relative;">
+				<a target="_blank" href="" class="holderGoods cloud-zoom" id="zoom1" rel="adjustX: 10, adjustY:1">
+				<dfn></dfn>
+				<img class="midImg" src="../img/zoom_1_m.jpg"  alt="康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W" title="康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W"></a>
+				<div class="tip"></div>
+				<div class="showImg">
+					<img src="../img/zoom_1_b.jpg" alt="">
+				</div>
+			</div>
+			
+			<!--有大图时才显示放大镜图标-->
+			<i class="proimg_tip"></i>
+			<i class="imgleft" id="js_imgleft" style="display: inline;"></i>
+			<div class="imglistbox">
+				<ul id="js_imglist" class="imglist" style="left: 0px;">
+ 					<li class="current">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_1_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_2_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_3_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_4_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_5_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_2_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_4_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_4_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_5_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+					<li class="">
+ 						<a target="_blank" href="" class="jsGoodsGallery cloud-zoom-gallery">
+							<dfn></dfn>
+							<img src="../img/zoom_3_m.jpg" class="imghover" style="height: 58px; width: 58px; margin: 0px;">
+ 						</a>
+					</li>
+	 			</ul>
+			</div>
+			<i class="imgrihgt" id="js_imgright" style="display: inline;"></i>
+			<div class="share" id="share" shareimg="http://img13.paixie.net/kangta/201604/21/812081-W_488_p.jpg" sharetitle="康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W">
+				<div class="sharelink">
+					<span><i></i>分享</span>
+					<p>
+						<a title="分享到腾讯微博" id="weibo" class="weibo" href="javascript:void(0)"><i></i> 腾讯微博</a>
+						<a title="分享到新浪微博" id="sina" class="sina" href="javascript:void(0)"><i></i> 新浪微博</a>
+						<a title="分享到搜狐微博" id="Tsohu" class="Tsohu" href="javascript:void(0)"><i></i> 搜狐微博</a>
+						<a title="分享到豆瓣" id="douban" class="douban" href="javascript:void(0)"><i></i> 豆瓣</a>
+						<a title="分享到QQ空间" id="qzone" class="qzone" href="javascript:void(0)"><i></i> QQ空间</a>
+						<a title="分享到网易微博" id="v361" class="v361" href="javascript:void(0)"><i></i> 网易微博</a>
+					</p>
+				</div>
+				<a title="收藏该商品" id="favPro" onclick="_hmt.push(['_trackEvent', 'dele_and_favor', 'favorite-d'])" class="favPro" href="/data/cartajax.php?webtype=6&amp;tp=move&amp;id=1237777"><i></i>收藏(<b>15</b>)</a>
+			</div>		
+			<!--<div class="favpro_tip" id="favpro_tip">
+				<i></i>
+				<div>
+					<h2>收藏该商品成功!</h2>
+					<a class="seeFavpro" href="/member/user_favorites">查看已收藏商品</a>
+					<a class="shoping" href="javascript:void(0)">继续购物</a>
+				</div>
+			</div>-->
+		</div>
+		<!-- 详情 -->
+		<div id="proinfo" class="proinfo">
+			<h1 title="康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W">康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W
+			</h1>
+			<!--正常价格显示-->
+			<div class="pricebox">
+				<div class="fho">
+					<div class="fl">市场价：<del><span class="oof">￥</span>302.00</del> （4.9折）</div>
+					<div class="codeno">商品货号：812081-W</div>
+				</div>
+
+				<div class="fprice">
+					<div class="fl">拍鞋价：</div>
+					<div class="redoof">￥</div>
+					<div class="current_price" id="js_current_price">149.32</div>
+				</div>
+			</div>	
+			<!--是组合购时，显示-->      		
+    		<div class="fare">
+    			运<span class="pl1em">费</span>：
+    			<span class="gray6" >免运费，该商品不支持货到付款</span>
+			</div>
+	   		
+			<div class="amount">
+				<p>用户评论 <b class="red">59</b></p>
+				<p>销售数量 <b class="red">1184</b></p>
+				<p class="last">赠<a href="" target="_blank">拍鞋币</a> <b class="green">149</b></p>
+			</div>
+			
+			<div class="selectbox" id="selectbox"><!--selecthover-->
+				<form id="form" class="selecform" action="/cart/trolly" method="post">
+					<input name="act" type="hidden" value="">
+					<input name="ljtype" type="hidden" value="1">
+					<input name="business[self][items][12377770000][itemid]" type="hidden" value="1237777">
+					<input id="sizeid" name="business[self][items][12377770000][sizeid]" type="hidden" value="552">
+					<input id="num" name="business[self][items][12377770000][num]" type="hidden" value="1">
+					<input type="hidden" name="stid" id="status_id" value="1237777">
+					<div class="selectip">请选择商品信息 <i></i></div>
+					<div class="colorbox">
+						<p>颜<span class="pl1em">色：</span></p>
+						<ul id="js-good-color-list" class="clear">
+							<li class="current">
+								<i></i>
+								<a href="/shoe-kangta-812081-W-1237777.html" title="黑红">
+									<dfn></dfn>
+									<img src="../img/zoom_1_m.jpg">
+								</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div class="sizebox">
+						<p>尺<span class="pl1em">码：</span></p>
+						<ul id="js_size1">
+							<li><i class="b"></i><a nums="45" vid="558" rel="40" href="javascript:void(0)">40</a></li>
+							<li><i class="b"></i><a nums="26" vid="560" rel="41" href="javascript:void(0)">41</a></li>
+							<li><i class="b"></i><a nums="28" vid="562" rel="42" href="javascript:void(0)">42</a></li>
+						</ul>
+						<p id="js_measuring" class="measuring">
+							<a href="#" class="gray82" id="js_sizemore"><i></i>尺码对照</a>
+						</p>
+						<div class="clear"></div>
+					</div>
+			
+					<div class="sumbox">
+						<p>数<span class="pl1em">量：</span></p>
+						<i class="numDown numdownNo"></i>
+						<input rel="" value="1" name="num" class="numText">
+						<i class="numUp"></i>
+					</div>
+					<div class="buttonbox">
+						<div class="payments">
+							<div class="">
+								<p>支付方式<i></i></p>
+								<ul>
+									<li><a title="支持支付宝付款" target="_blank" href="http://help.paixie.net/alipay00.html">支付宝</a></li>
+									<li><a title="" target="_blank" href="http://help.paixie.net/alipay00.html">在线银联支付</a></li>
+									<li><a title="支持财付通付款" target="_blank" href="http://help.paixie.net/alipay00.html">财付通</a></li>
+									<li><a title="支持使用信用卡快捷支付付款" target="_blank" href="http://help.paixie.net/alipay00.html">信用卡快捷</a></li>
+									<li><a title="支持国内各大银联卡在线付款" target="_blank" href="http://help.paixie.net/alipay00.html">网银支付</a></li>
+								</ul>
+							</div>
+						</div>
+					<!--做到这里-->
+						<input class="bred" type="button"  value="立即购买" rel="buy" id="tj_buy">
+						<input class="borg" type="button" value="加入购物车" rel="addcart" id="tj_addcart">		
+					</div>
+					<div class="tipbutbox">
+						<input class="bred" type="button" value="确定">
+					</div>
+				</form>	
+			</div>
+		</div>
+		<div class="description" id="description">
+			<div class="tabbar">
+				<ul>
+					<li class="current" rel="details">商品详情</li>
+					<li rel="commentCont">用户评论</li>
+					<li rel="promise">购物保障</li>
+					<li rel="paydelivery">支付与配送</li>
+					<li rel="measurement" >尺码测量</li>
+				</ul>
+				<div>
+					<p>手机下单更方便
+						<i></i>
+						<span><img src="../img/erweima.png"></span>
+					</p>
+				</div>
+			</div>
+			<div id="js_details" class="details">
+				<ul class="detailso clear">
+					<li><b>货号：</b><strong title="康踏 812081-W">康踏 812081-W</strong></li>
+	                <li><b>品牌：</b><a title="康踏官方网站" href="/kangta/">康踏</a></li>
+					<li><b>款式：</b><a title="男跑步鞋" href="/p-m0001s002801082_1.html">男跑步鞋</a></li>
+					<li><b>颜色：</b><span title="黑红">黑红</span></li>
+					<li><b>分类：</b><span title="运动鞋">运动鞋</span></li>
+					<li style="display: block;"><b>上架时间：</b><span title="2016-04-21">2016-04-21</span> <input type="hidden" id="shoesClass" value="1"></li>
+					<li><b>鞋码偏差：</b><span title="正常">正常</span></li>
+					<li style="display: none;"><b>上市年份：</b><span title="2016">2016</span></li>
+					<li><b>闭合方式：</b><span title="系带">系带</span></li>
+					<li><b>适合季节：</b><span title="夏秋">夏秋</span></li>
+					<li><b>流行元素：</b><span title="车缝线">车缝线</span></li>
+					<li><b>运动鞋科技：</b><span title="缓震胶">缓震胶</span></li>
+					<li><b>性别：</b><span title="男">男</span></li>
+					<li><b>适合场地：</b><span title="跑道">跑道</span></li>
+					<li><b>帮面材质：</b><span title="网布">网布</span></li>
+					<li><b>外底材料：</b><span title="橡胶底">橡胶底</span></li>
+					<li><b>运动鞋功能：</b><span title="抗冲击">抗冲击</span></li>
+					<li><b>商品编码：</b><span title="商品编码">1237777</span></li>
+					<!-- <li class="clear"></li>	 -->
+				</ul>
+			<div class="size-table"></div>	
+		</div>
+		<div class="subdescription" id="subdescription">
+			<div class="subtabbar" id="subtabbar">
+				<i class="top"></i>
+				<ul>
+					<li class="current" rel="details"><i></i>商品详情</li>
+					<li rel="commentCont"><i></i>用户评论</li>
+					<li rel="promise"><i></i>购物保障</li>
+					<li rel="paydelivery"><i></i>支付与配送</li>
+					<li rel="measurement" style=""><i></i>尺码测量</li>
+				</ul>
+				<i class="bot"></i>
+			</div>
+
+		<div id="js_proinfo" class="tab_nav detailsimg">
+			<!--商家自定义上面-->
+			
+			<!--商家自定义上面end-->
+			<div id="js_infoimg" class="infoimg" style="height: auto;">
+				 <img src="../img/goods_info_1.jpg" style="opacity: 1;">  
+				 <img src="../img/goods_info_2.jpg" style="opacity: 1;"> 
+				 <img src="../img/goods_info_3.jpg" style="opacity: 1;"> 
+				 <img src="../img/goods_info_4.jpg" style="opacity: 1;">  
+				 <img src="../img/goods_info_5.jpg" style="opacity: 1;">  
+				 <img src="../img/goods_info_6.jpg" style="opacity: 1;">  
+			</div>
+			<div class="size-tablenone" style=" display:none;"></div>
+			<!--商家自定义下面-->	
+			<!--商家自定义下面end-->	
+		</div>
+		<div id="js_commentCont" class="tab_nav commentCont" style="display:block">
+			<div class="comment_fractions">
+				<p class="comment_fraction">
+					综合满意指数
+					<span class="red"><strong>4.9</strong>分</span>
+					<i class="star"><i style="width:98%;"></i></i>
+				</p>
+				<p class="comment_satisfied">
+					<span class="satisfied">
+						<span style="width:78%;"></span>
+					</span>
+					<b class="pl1em">非常不满意</b>
+					<b>不满意</b>
+					<b>一般</b>
+					<b>满意</b> 
+					<b>非常满意</b>
+				</p> 
+				<a class="comment_go_comment" href="/member/user_comment" target="_blank">我要评论</a>
+			</div>
+			<div class="comment_think">
+				<p>大家认为：</p>
+				<div class="comment_thinkbox">
+					<h3>尺码</h3>
+					<ul>
+						<li title="76%觉得合适"><b>合适</b><i><em style="width:76%;"></em></i>76%</li>
+						<li title="24%觉得偏小"><b>偏小</b><i><em style="width:24%;"></em></i>24%</li>
+						<li title="0%觉得偏大"><b>偏大</b><i><em style="width:0%;"></em></i>0%</li>
+					</ul>
+				</div>
+				<div class="comment_thinkbox">
+					<h3>舒适度</h3>
+					<ul>
+						<li title="76%觉得舒服"><b>舒服</b><i><em style="width:76%;"></em></i>76%</li>
+						<li title="24%觉得一般"><b>一般</b><i><em style="width:24%;"></em></i>24%</li>
+						<li title="0%觉得难受"><b>不舒服</b><i><em style="width:0%;"></em></i>0%</li>
+					</ul>
+				</div>
+			</div>		
+			<div id="js-comment-filter" class="comment_filter">
+				<a rel="nosatisfied">不满意<i>（0）</i></a>
+				<a rel="general">一般<i>（1）</i></a>
+				<a rel="satisfied">满意<i>（58）</i></a>
+				<!--a rel="useful" class="lasta">有用<i>（0）</i></a-->
+				<a class="selected" rel="all">全部<i>（59）</i></a>
+			</div>		
+			<ul id="js-comment_list" class="comment_list">
+				<li>
+					<div class="user_info">
+						<i class="grade_0"></i>
+						15***om
+						<!--i></i-->
+					</div>
+					<div class="comment_info">
+						<h3>
+							<p><span>购买颜色：</span>黑红</p>
+							<span>尺码：</span>42
+							<i class="star"><i style="width:100%;"></i></i>
+						</h3>
+						<div>
+							鞋子质量很好
+							<br>
+							<span>2016-09-02 20:23:35</span>
+ 							<p class="comment-buttons">
+								<a class="useful-button" rel="0" comment_id="17761037">有用(0)</a>
+							</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</li>
+			</ul>
+			<a href="/comment/product-752497,1237777-1.html" id="js-comment-getmore" class="comment-getmore" rel="0">查看更多评论</a>			
+		</div>
+		<div class="promise tab_nav" id="js_promise" style="display:none;">
+			<h3><i>1</i>正品保证  品牌授权</h3>
+			<p> 拍鞋网已得到所售商品的品牌官方授权书，其内容授权拍鞋网心网络销售的形式，销售该品牌旗下正品商品的资格，同时授予拍鞋网该品牌
+			商标的网络使用权，并认可拍鞋网拥有该品牌商品权利内的所有网络经营活动。</p>
+			<img src="../img/empty.gif">
+			<div class="h10"></div>
+			<h3><i>2</i>闪电发货</h3>
+			<img src="../img/empty.gif">
+			<div class="h10"></div>
+			<h3><i>3</i>15天无理由免邮退换货</h3>
+			<p>拍鞋网提倡诚信为本，为消费者提供100%品质保证的商品，15天无理由免邮退换货的售后服务及10天保值差价返还服务，让您放心，轻松享
+			受拍鞋网的购物乐趣。</p>
+			<table border="0" cellpadding="0" cellspacing="1">
+				<tbody>
+					<tr>
+						<td><i class="face1"></i>拍鞋网“15天无理由免邮退换货”服务</td>
+						<td><i class="face2"></i>一般网购“7天无理由退换货”服务</td>
+					</tr>
+					<tr>
+						<td><i class="face1"></i>商品质量问题可退换货</td>
+						<td><i class="face2"></i>商品质量问题需要提供实物照片等</td>
+					</tr>
+					<tr>
+						<td><i class="face1"></i>拍鞋网以现金券的形式承担退货运费</td>
+						<td><i class="face2"></i>需要消费者承担全额退货运费</td>
+					</tr>
+									<tr>
+						<td><i class="face1"></i>10天保值差价返还服务</td>
+						<td><i class="face2"></i>无保值差价返还服务</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3><i>4</i>贴心售后</h3>
+			<b>30天质量三包服务</b>
+			1.因生产存在小范围不完美，如出现开胶、脱线、断线的可保修<br>
+			2.非人为因素，商品出现严重质量问题支持退还
+			<div class="h10"></div>
+			<div class="h10"></div>
+			<b>退换货流程</b>
+			<img src="../img/promise_04.jpg">
+		</div>
+		<div id="js_paydelivery" class="tab_nav paydelivery" style="display: none;">
+			<table width="100%" cellspacing="1" cellpadding="0">
+				<tbody>
+					<tr>
+						<th class="title" colspan="3">支付方式</th>
+					</tr>
+					<tr>
+						<td class="title" rowspan="4">在线支付</td>  
+						<td class="paytype" colspan="2"><i></i><span>支付宝支付</span><a href="http://help.paixie.net/alipay00.html" target="_blank">查看支付演示</a></td>
+					</tr>
+					<tr>
+						<td class="paytype" colspan="2"><i class="tenpay"></i><span>财付通支付</span><a href="http://help.paixie.net/alipay00.html" target="_blank">查看支付演示</a></td>
+					</tr>
+					<tr>
+						<td class="paytype" colspan="2"><i class="fast"></i><span>信用卡快捷支付</span><a href="http://help.paixie.net/alipay00.html" target="_blank">查看支付演示</a></td>
+					</tr>
+					<tr>
+						<td class="paytype" colspan="2"><i class="online"></i><span>网银在线支付</span><a href="http://help.paixie.net/alipay00.html" target="_blank">查看支付演示</a></td>
+					</tr>
+					<tr>
+						<td class="title" rowspan="2">线下支付</td>
+						<td class="title2">邮政汇款</td>
+						<td>您可以选择邮政汇款进行支付。请您在下单完成后尽快到邮局柜台进行汇款。邮政汇款订单在下单3天后，如果未收到汇款，订单将被系统自动取消。</td>
+					</tr>
+					<tr>
+						<td class="title2">银行转账</td>
+						<td>您可以到银行通过“转账”进行支付。（注：您付款成功后请务必及时通知我们。以便我们能及时为您发货。）<a href="http://help.paixie.net/alipay00.html" target="_blank">查看支付汇款的银行及收款账号</a></td>
+					</tr>
+					<tr>
+						<th colspan="3">配送说明</th>
+					</tr>
+					<tr>
+						<td class="title">运费说明：</td>
+						<td colspan="2">拍鞋网购物满129元免运费（开放平台商家除外）。<a href="http://help.paixie.net/freight.html" target="_blank">详细运费说明</a></td>
+					</tr>
+					<tr>
+						<td class="title">配送范围：</td>
+						<td colspan="2">全国均可到达。</td>
+					</tr>
+					<tr>
+						<td class="title">配送方式：</td>
+						<td colspan="2">
+						目前拍鞋网为您提供的配送快递有顺丰快递、申通快递、EMS快递（一般送达时间为3-5天，偏远地区会有1-2天延迟）。<br>
+						1、拍鞋网根据您的送货地址以及您选择的支付方式安排您订购商品的最佳配送方式。<br>
+						2、快递公司是由拍鞋网统一选用的，客户不可自选非拍鞋网合作范围的快递公司。<br>
+						3、如果您对商品配送有什么疑问，请咨询拍鞋网客服热线：4008-81-82-83。
+						</td>
+					</tr>
+					<tr>
+						<td class="title">异常收货：</td>
+						<td colspan="2">如果您订购的商品是当季新品，则有可能出现货品库存紧张。因此拍鞋网提供给您的收货时间只作为参考，不作为最终承诺。拍鞋网将尽全力控制配送时间，如果发生特殊情况（如调货延迟），拍鞋网将及时与您沟通商品确切到达时间。敬请谅解！</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>		
+		<div id="js_measurement" class="tab_nav measurement" style="display: none;">
+			<h3>如何量脚</h3>
+			<img src="../img/empty.gif" style="float:right; margin:0 0 10px 30px">
+			<p>1. 量脚姿势：请您在量脚长时双脚均匀受力站立于地面上</p>
+			<p>2. 运动鞋测量：如果您需要购买运动鞋，建议您穿上适合相应运动的袜子后，再测量脚长；</p>
+			<p>3. 测量时间：建议您在下午测量脚长，这时的脚会较大；</p>
+			<p>4. 人的左右脚基本对称，但是肯定有细微差别也就是大小脚的差别，所以测量鞋子尺码时应选择较大的那只；</p>
+			<h3>不同脚型的尺码建议</h3>
+			注：实线为标准脚型，虚线为实际脚型。<br>
+			<img src="../img/empty.gif" timg="http://img-cdn2.paixie.net/sign_pic/20150511/measurement-06.jpg">
+			以下为女鞋选购为例：<br>
+			例如：脚长在：236mm~239mm的范围，可以参考下面的来选择，如果您的脚长不在236mm~239mm范围，您可以根据你脚长及脚型来选购；			
+			<table width="100%" cellspacing="1" cellpadding="0">
+				<tbody><tr>
+					<th><div class="out"><b>脚型</b><em>鞋款</em></div></th>
+					<th>浅口鞋</th>
+					<th>有脚踝带</th>
+					<th>凉鞋</th>
+					<th>凉拖</th>
+					<th>满帮鞋</th>
+					<th>靴子</th>
+				</tr>
+				<tr>
+					<td>标准脚型</td>
+					<td>正常码</td>
+					<td>正常码</td>
+					<td>正常码</td>
+					<td>正常码</td>
+					<td>正常码</td>
+					<td>正常码</td>
+				</tr>
+				<tr>
+					<td>偏胖脚型</td>
+					<td class="tleft">漆皮偏大一码，软皮、绒面皮正常码</td>
+					<td>偏大一码</td>
+					<td>偏大一码</td>
+					<td>偏大一码</td>
+					<td>偏大一码</td>
+					<td>偏大一码</td>
+				</tr>
+				<tr>
+					<td>偏瘦脚型</td>
+					<td class="tleft">正常码，漆皮、软皮、绒面皮偏小一码</td>
+					<td>正常码</td>
+					<td class="tleft">正常码，条带细且少的款式偏小一码</td>
+					<td>正常码</td>
+					<td>正常码</td>
+					<td>正常码</td>
+				</tr>
+				<tr>
+					<td>特殊脚型</td>
+					<td class="tleft">偏大一码，软皮、绒面皮正常码</td>
+					<td>偏大一码</td>
+					<td class="tleft" colspan="2">大趾骨较为突出，建议选择条带较宽的凉鞋，偏大一码</td>
+					<td>偏大一码</td>
+					<td>偏大一码</td>
+				</tr>
+			</tbody></table>
+			<h3>如何保养</h3>
+			1. 定期清洁鞋，鞋面脏后，准备一块干净软布、一分温水 和一点清洁液在鞋面轻轻擦拭；<br>
+			2. 把软布完全浸湿，拧干后，在软布的角落倒一点清洁液；<br>
+			3. 在鞋面上轻轻打圈擦拭，去除鞋面污垢，切勿将鞋面湿透；<br>
+			4. 拿一把旧牙刷，清洁褶皱和接缝部位，小心轻刷，避免破坏缝线；<br>
+			5. 清洗时不可使用漂白剂，切勿用刷子猛刷；<br>
+			6. 皮质鞋品应打鞋油，以保证皮质韧性；<br>
+			7. 维持两双以上可替换的鞋，让鞋子轮流休息；<br>
+			8. 注意专鞋专用，休闲鞋、凉鞋、高跟鞋等不宜做剧烈运动，室内运动鞋不宜在室外环境进行剧烈运动。			
+		</div>
+	</div>
+	</div>
+	</div>
+	<div class="body_foot">
+		<div class="foot_icon">
+			<div class="foot_icon_li">
+				<span>
+					<i class="icon_1"></i>
+					<b><a href="javascript:;">正品保证 假一赔十</a></b>
+				</span>
+			</div>
+			<div class="foot_icon_li">
+				<span>
+					<i class="icon_2"></i>
+					<b><a href="javascript:;">货到付款 全国范围</a></b>
+				</span>
+			</div>
+			<div class="foot_icon_li">
+				<span>
+					<i class="icon_3"></i>
+					<b><a href="javascript:;">10天保值 差价返还</a></b>
+				</span>
+			</div>
+			<div class="foot_icon_li">
+				<span>
+					<i class="icon_4"></i>
+					<b><a href="javascript:;">满129元包邮</a></b>
+				</span>
+			</div>
+			<div class="foot_icon_li">
+				<span>
+					<i class="icon_5"></i>
+					<b><a href="javascript:;">15天无理由 免邮退换货</a></b>
+				</span>
+			</div>
+		</div>
+		<div class="foot_nav">
+			<dl>
+				<dd class="help">
+					<b>新手帮助</b>
+					<span><a href="javascript:;">注册会员</a></span>
+					<span><a href="javascript:;">如何购物</a></span>
+					<span><a href="javascript:;">拍鞋币说明</a></span>
+					<span><a href="javascript:;">优惠券说明</a></span>
+				</dd>
+				<dd class="pay">
+					<b>支付方式</b>
+					<span><a href="javascript:;">支付宝快捷支付</a></span>
+					<span><a href="javascript:;">网上银行支付</a></span>
+					<span><a href="javascript:;">货到付款</a></span>
+					<span><a href="javascript:;">运费说明</a></span>
+				</dd>
+				<dd class="serve_sale">
+					<b>售后服务</b>
+					<span><a href="javascript:;">退换货政策说明</a></span>
+					<span><a href="javascript:;">如何办理退货</a></span>
+					<span><a href="javascript:;">退款详细说明</a></span>
+				</dd>
+				<dd class="about">
+					<b>关于拍鞋网</b>
+					<span><a href="javascript:;">了解拍鞋网</a></span>
+					<span><a href="javascript:;">商家入驻</a></span>
+					<span><a href="javascript:;">联系我们</a></span>
+					<span><a href="javascript:;">拍鞋招聘</a></span>
+				</dd>
+				<dd class="serve_online">
+					<b>客服中心</b>
+					<span><a href="javascript:;">客户电话：4008 818283</a></span>
+					<span><a href="javascript:;">售后专线：0595-85245622441</a></span>
+					<span><a href="javascript:;">服务时间：周一到周日8:00-23:30</a></span>
+				</dd>
+				<dd class="moble">
+					<b>拍鞋网客户端</b>
+					<p>随时随地上拍鞋网！</p>
+					<span class="qcode"></span>
+				</dd>
+				<dd>
+					<b>拍鞋微信</b>
+					<p>查订单更便捷</p>
+					<span class="wcode">
+						<p class="share">
+							<a class="weibo" href="javascript:;"></a>
+							<a class="qzone" href="javascript:;"></a>
+						</p>
+					</span>
+				</dd>
+			</dl>
+		</div>
+		<div class="foot_copyright">
+			<span>Copyright &copy;  2007-2016 Paixie.net All Rights Reserved 闽B2-20110084</span>
+		</div>
+		<div class="foot_link">
+			<div class="link_show"></div>
+			<b>友情链接: </b>
+			<a href="http://www.bloves.com/" target="_blank">钻戒</a>
+			<a href="http://www.laobiao.com" target="_blank">江西老表网</a>
+			<a href="http://www.258.com/" target="_blank">258企业服务平台</a>
+			<a href="http://www.waibotu.com/" target="_blank">返利网</a>
+			<a href="http://www.easeeyes.com" target="_blank">美瞳</a>
+			<a href="http://www.99114.com" target="_blank">B2B电子商务</a>
+			<a href="http://www.gougoujp.com/" target="_blank">雅虎日本</a>
+			<a href="http://www.cunan.com" target="_blank">伊宅购村安商城</a>
+			<a href="http://www.qqqnm.com" target="_blank">海淘攻略</a>
+			<a href="http://www.geihui.com" target="_blank">给惠网</a>
+			<a href="http://www.paixie.net/zhishi/" target="_blank">拍鞋百科</a>
+			<a href="http://www.91lai.com" target="_blank">代购</a>
+			<a href="http://www.letao-cn.com/" target="_blank">日本代购</a>
+			<a href="http://www.shelive.net/" target="_blank">穿衣搭配网</a>
+			<a href="http://www.hbrc.com/" target="_blank">石家庄招聘</a>
+			<a href="http://www.vmall.com/" target="_blank">华为商城</a>
+			<a href="http://www.wbiao.cn" target="_blank">万表网官网</a>
+			<a href="http://www.nahuo.com/" target="_blank">服装批发</a>
+			<a href="http://www.aiuw.com/" target="_blank">装修</a>
+			<a href="http://www.zhe800.com/" target="_blank">9.9包邮</a>
+			<a href="http://www.xbiao.com" target="_blank">手表品牌大</a>
+			<a href="http://www.eelly.com/" target="_blank">衣联网</a>
+			<a href="http://www.ef43.com.cn" target="_blank">中国丽人网</a>
+			<a href="http://www.wed114.cn/" target="_blank">婚纱摄影</a>
+			<a href="http://www.quanmama.com/" target="_blank">优惠券网站</a>
+			<a href="http://www.city8.com" target="_blank">中国街景地图 </a>
+			<a href="http://www.chinapp.com/" target="_blank">中国品牌网</a>
+			<a href="http://www.99wed.com/" target="_blank">婚纱摄影</a>
+			<a href="http://www.51sole.com/" target="_blank">搜了网</a>
+			<a href="http://www.juanpi.com/" target="_blank">卷皮折扣</a>
+			<a href="http://www.zhidiy.com" target="_blank">纸艺网</a>
+			<a href="http://www.liebiao.com/" target="_blank">分类信息网</a>
+			<a href="http://hzp.onlylady.com/" target="_blank">化妆品品牌大全</a>
+			<a href="http://www.jufengshang.com" target="_blank">手表网</a>
+			<a href="http://www.taofen8.com/" target="_blank">淘粉吧</a>
+			<a href="http://www.bestb2b.com/" target="_blank">志趣网</a>
+			<a href="http://www.jiukuaiyou.com/" target="_blank">九块邮</a>
+			<a href="http://www.darryring.com/" target="_blank">DR</a>
+			<a href="http://www.cnxz.cn/" target="_blank">中国鞋网</a>
+			<a href="http://www.shoes.net.cn/" target="_blank">环球鞋网</a>
+			<a href="http://www.liwuyou.com/" target="_blank">生日礼物网</a>
+			<a href="http://www.moonbasa.com/" target="_blank">品牌女装</a>
+			<a href="http://www.xbaixing.com/" target="_blank">百姓网</a>
+			<a href="http://www.huangye88.com" target="_blank">中国供求信息网</a>
+			<a href="http://www.tnc.com.cn/" target="_blank">纺织网 </a>
+			<a href="http://www.234.cn/" target="_blank">儿童玩具</a>
+			<a href="http://www.kidsnet.cn/" target="_blank">童装加盟网</a>
+			<a href="http://www.7dapei.com/" target="_blank"> 穿衣搭配网</a>
+			<a href="http://www.efu.com.cn/ " target="_blank">中国服装网</a>
+			<a href="http://www.1688ru.com" target="_blank">中亚商务网</a>
+			<a href="http://www.longfeng.com/" target="_blank">龙凤商城</a>
+			<a href="http://www.chinaleather.org/" target="_blank">中国皮革网</a>
+			<a href="http://www.sodao.com" target="_blank">免费试用</a>
+			<a href="http://www.love616.com" target="_blank">服饰搭配</a>
+			<a href="http://www.78.cn/" target="_blank">投资开店</a>
+			<a href="http://www.ickd.cn/" target="_blank" rel="nofollow">爱查快递</a>
+			<a href="http://www.hunt007.com/" target="_blank">找工易</a>
+			<a href="http://www.1000tuan.com/" target="_blank">千团网</a>
+			<a href="http://www.paixie.net/link.html" rel="nofollow" target="_blank">更多&gt;</a>
+		</div>
+		<div class="foot_link_img">
+			<a href="javascript:;" class="investment"></a>
+			<a href="javascript:;" class="ecommerce"></a>
+			<a href="javascript:;" class="alipay"></a>
+			<a href="javascript:;" class="scouring"></a>
+			<a href="javascript:;" class="honesty"></a>
+			<a href="javascript:;" class="commerce"></a>
+			<a href="javascript:;" class="report"></a>
+		</div>
+	</div>
+</body>
+</html>

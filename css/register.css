@@ -1,0 +1,295 @@
+@charset 'utf-8';
+/* CSS DOCUMENT */
+body{
+	min-width: 980px;
+	color: rgb(51, 51, 51);
+    overflow-y: scroll;
+    background: rgb(245, 245, 245) !important;
+}
+.reg_head{
+	width: 980px;
+    margin: 31px auto;
+}
+.logo{	
+	display: inline-block;
+	width: 214px;
+    height: 86px;
+    background: url(../img/paixie_icon_1.png) no-repeat -115px -117px;
+    vertical-align: middle;
+}
+.reg_head h1{
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.reg_content{
+	width: 978px;
+    border: 1px solid #dadada;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 3px 3px 3px #EFEFEF;
+    -moz-box-shadow: 3px 3px 3px #EFEFEF;
+    -webkit-box-shadow: 3px 3px 3px #EFEFEF;
+    -ms-box-shadow: 3px 3px 3px #EFEFEF;
+}
+
+.reg_area{
+	padding: 40px 30px 58px 30px;
+    overflow: hidden;
+}
+.form{
+	width: 670px;
+    float: left;
+    border-right: 1px dashed #d2d2d2;
+}
+
+.form label{
+	width: 80px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: right;
+}
+
+.form .base_text{
+	border: 1px solid #dadada;
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    width: 290px;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    margin: 14px 5px;
+}
+
+.form .base_text>span{
+	padding-left: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #b7b7b7;
+    font-size: 14px;
+    line-height: 36px;
+}
+.form  .noticeinfo{
+	display: inline-block;
+	float: right;
+	margin-top: 14px;
+}
+.form .base_text input{
+	padding: 8px 28px 8px 0;
+    line-height: 20px;
+    overflow: hidden;
+    width: 257px;
+    margin-left: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    outline: none;
+	background: url(../img/empty.gif);
+    color: #333;
+    font-size: 14px;
+}
+.form .base_text .base_close{
+	position: absolute;
+    top: 13px;
+    right: 9px;
+    cursor: pointer;
+    display: none;
+    vertical-align: middle;
+    width: 10px;
+    z-index: 3;
+    height: 10px;
+    overflow: hidden;
+    background: url(../img/login.png) no-repeat;
+    background-position: -78px -106px;
+}
+
+.form  .v_text{
+ 	display: inline-block;
+ 	width: 271px;
+    margin-left: -6px;
+    line-height: 36px;
+    height: 36px;
+    border: 1px solid #fff;
+    padding: 0 8px;
+    vertical-align: middle;
+    color: #666;
+/*     font-size: 12px; */
+    display: none;
+ }
+ .form .v_ok{
+ 	width: 15px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/login.png) no-repeat;
+    background-position: -78px 0;
+ }
+ /* 提示框状态 */
+ .form .notice{
+ 	background: #eef9ff;
+    border-color: #ddf3ff;
+ }
+ .form .error{
+	background: #fdeaea;
+    border-color: #f9dddd;
+ }
+ /* 输入框状态 */
+ .form .focus{
+ 	border-color:#6cb8df;
+ 	box-shadow:0 0 1px 0px #7fcaf1
+ }
+ .form .inputerror{
+ 	border-color: #e46666;
+    box-shadow: 0 0 1px 0px #f37c7c;
+ }
+
+/* 密码强度提示 */
+
+.reg_area .password_strength{
+	margin-left: 88px;
+    margin-top: -14px;
+    width: 292px;
+    overflow: hidden;
+    display: none;
+}
+.password_strength span{
+	width: 96px;
+    margin-right: 1px;
+    float: left;
+    line-height: 14px;
+    height: 14px;
+    background: #ffd099;
+    color: #fff;
+    text-align: center;
+}
+.password_strength  .now{
+	background: #f60;
+}
+
+.password_strength  .last{
+	width: 98px;
+    margin-right: 0;
+}
+
+/* 验证码  codearea*/
+.codearea{
+	display: none;
+}
+.codearea .code_num{
+	width: 135px;
+}
+.codearea .base_text .code_input{
+	width: 102px;
+}
+.codearea .input_button{
+	line-height: 35px;
+    height: 35px;
+    color: #333;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 0 10px;
+    text-align: center;
+    margin: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #dadada;
+    height: 35px;
+    background: url(../img/login.png) no-repeat;
+    background-position: 0 -120px;
+    position: relative;
+    margin-left: 0;
+    width: 124px;
+}
+.codearea .noticeinfo {
+
+}
+.codearea .noticeinfo .v_error{
+	background: none;
+    border: none;
+    color: red;
+    display: block;
+    line-height: 14px;
+    height: 14px;
+    margin-top: -14px;
+    margin-left: 77px;
+    height: 14px !important;
+    width: 500px;
+    padding: 0 8px;
+    vertical-align: middle;
+}
+
+
+
+
+ .agreement label{
+    display: inline-block;
+	line-height: 22px;
+    width: auto;
+    margin: 0 0 0 85px;
+    text-align: left;
+    font-size: 12px;
+    color: #878787;
+ }
+ .agreement input{
+  	display: inline-block;
+    vertical-align: middle;
+ }
+.agreement .agree{
+	 color: #08c;
+}
+.agreement .agree:hover{
+	text-decoration: underline;	 
+ }
+.blue_button{
+	display: block;
+    position: relative;
+	width: 272px;
+    margin: 14px 0 0 85px;
+    line-height: 40px;
+    height: 40px;
+    background: #0487df;
+    color: #fff;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+	font-size: 16px !important;
+}
+.side{
+	color: #919191;
+    line-height: 40px;
+    float: left;
+    display: inline;
+    margin-left: 30px;
+}
+.side a{
+	display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    text-indent: 30px;
+    background: url(../img/login.png) no-repeat;
+    background-position: -118px 0;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+.reg_footer{
+	width: 980px;
+    margin: 0 auto;
+	line-height: 20px;
+    padding: 30px 0;
+    text-align: center;
+    color: #668686;
+}
+

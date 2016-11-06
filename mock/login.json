@@ -1,0 +1,38 @@
+{
+    "status": true, 
+    "total": 4, 
+    "people": [
+        {
+            "id": 1, 
+            "name": "小铭", 
+            "age": 22, 
+            "tel": "15836257895", 
+            "mail": "xiaoming@163.com", 
+            "password" : "xiaoming"
+        },
+        {
+            "id": 2, 
+            "name":"小张",
+            "age":21,
+            "tel":"13548253658",
+            "mail":"xiaozhang@163.com",
+            "password":"xiaozhang"
+        }, 
+        {
+            "id": 3, 
+            "name":"小黄",
+            "age":22,
+            "tel":"15836257895",
+            "mail":"xiaohuang@163.com",
+            "password":"xiaohuang"
+        }, 
+        {
+            "id": 4, 
+            "name":"琴儿",
+            "age":24,
+            "tel":"15025487536",
+            "mail":"qinger@163.com",
+            "password":"qiner"
+        }
+    ]
+}

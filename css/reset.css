@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS document */	
+body,div,a,p,em,dl,dd,h1,h2,h3,h4,h5,h6,ul,li,form,input,i,b,table,tbody,del,strong{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	font-weight:normal;
+	font-style:normal;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#000;
+	cursor: pointer;
+}
+a:focus{
+	outline: none;
+}
+
+body{
+	width: 100%;
+	font-size:12px;
+	font-family:"Microsoft YaHei", arial, verdana, sans-serif;
+}
+h1,h2,h3,h4,h5,h6,em{
+	font-size:100%;
+	font-weight:normal;
+	font-style:normal;
+}
+input,img{
+	border:0;
+	border:none;
+	vertical-align:middle;
+	outline: none;
+}
+input:focus{
+	outline: none;
+}
+button{
+	border: none;
+}
+.clear::after{
+	content:'.';
+	clear:both;
+	display:block;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+tbody{
+	display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr{
+	display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}	
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+.red1{
+	color: #f10e19;
+}
+.hide{
+	display:none;
+}
+.show{
+	display: block;
+}
+.bred{
+    background-color: #c00;
+}
+
+.borg{
+	background-color: #da720e;
+}
+.red{
+	color:#c00;
+}
+
+
+
+

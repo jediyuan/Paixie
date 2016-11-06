@@ -1,0 +1,2505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拍鞋网商城首页_国内专业品牌鞋服购物网站_买鞋子 就上拍鞋网！</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jQuery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jQuery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+	<script type="text/javascript" src="js/index.js" charset="utf-8"></script>
+</head>
+<body>
+	<!-- side_right -->
+	<div class="r_side">
+		<div class="r_side_top">
+			<span class="all_cart">
+				<a class="cart_guide" href="javascript:;">
+					<span>购物车</span>
+					<i>0</i>
+				</a>
+				<div class="cart_box">
+					<div class="nogoods">
+						<span></span>
+						<p>主人，不要太小气嘛，多放点商品来陪伴我吧 
+							<a href="index.html">去挑选</a>
+						</p>
+					</div>	
+				</div>
+				<div class="cart_goods"></div>
+			</span>
+			<span class="all_txt_r">
+				<a class="all_r_news" href="javascript:;"></a>
+				<div class="all_r_box">优惠信息</div>
+			</span>
+			<span class="all_txt_r">
+				<a class="all_r_history" href="javascript:;"></a>
+				<div class="all_r_box">历史记录</div>
+			</span>
+			<span class="all_txt_r">
+				<a class="all_r_kefu" href="javascript:;"></a>
+				<div class="all_r_box">在线客户</div>
+			</span>
+		</div>
+		<div class="r_side_foot">
+			<span>
+				<a class="side_qr" href="javascript:;"></a>
+				<div class="side_qr_con">
+					<span class="show_qr"></span>
+				</div>
+			</span>
+			<span>
+				<a class="side_totop" href="javascript:;"></a>
+				<div class="totop">返回顶部</div>
+				
+			</span>
+		</div>
+	</div>
+	<!-- side_left -->
+	<div class="side_left">
+		<a href="javascript:;" ><i class="a1">运动户外</i></a>
+		<a href="javascript:;" ><i class="a2">女鞋女装</i></a>
+		<a href="javascript:;"><i class="a3">男鞋男装</i></a>
+		<a href="javascript:;"><i class="a4">童鞋童装</i></a>
+		<a href="javascript:;"><i class="a5">箱包家纺</i></a>
+	</div>
+	<!-- 顶部菜单 -->
+	<div class="scrollbgbox">
+		<!-- 登录前 -->
+		<div class="ontover">
+			<i class="hmsicon"></i>
+			<span class="hms">全部商品分类</span>
+			<div class="newL"></div>
+		</div>
+
+		<div class="formp">
+			<input type="text" id="paixie_so" name="keywords" autocomplete="off" class="sotext soout search_area" value="">
+			<input type="submit" class="sobtn" id="head_sobtn" value="搜 索">
+			<div class="head_solist" id="head_solist">
+				<!-- <ul class="searchul">
+				</ul> -->
+			</div>
+		</div>
+		<span class="scrollloginout" id="scrollloginout" style="display: block;">
+			<a href="javascript:;" class="scrollcart">
+				查看购物车
+				<b class="cartnum">0</b>
+			</a>
+			<a href="html/login.html">登录</a>
+			<i>|</i>
+			<a href="html/register.html">注册</a>
+		</span>
+		<!-- 登录后 -->
+		<span class="scrollloginin" id="scrollloginin" style="display:none"></span>
+	</div>
+
+	<!-- header -->
+	<div class="header">
+		<!-- head_top -->
+		<div class="head_top">
+			<div class="top_con">
+				<div class="head_top_l fl">
+					<a class="head_phone" href="javascript:;"></a>
+					<p id="loginOut">
+						<span class="welcome">您好，欢迎来到拍鞋网！</span>
+						<a href="html/login.html" class="login"></a>
+						<a href="html/register.html" class="reg">免费注册</a>
+					</p>
+				</div>
+				<div class="head_top_r fr">
+					<span class="cart">
+						<a href="javascript:;">
+							<i class="cart_bg"></i>购物车
+							<b class="cart_num">0</b>
+						</a>
+						<div class="cart_info">
+							<b class="nogoods">您还没有购买任何商品，快去挑选把！</b>
+						</div>
+					</span>
+					<i class="head_r_line"></i>
+
+					<span class="mypaixie">
+						<a href="javascript:;">
+							我的拍鞋
+							<i></i>
+						</a>
+						<ul class="paixe_ul">
+							<li><a href="javascript:;">我的订单</a></li>
+							<li><a href="javascript:;">我的收藏</a></li>
+							<li><a href="javascript:;">我的优惠券</a></li>
+						</ul>
+					</span>
+					<i class="head_r_line"></i>
+
+					<span class="msg">
+						<a href="javascript:;">
+							<i>消息</i>
+							<b class="msg_num">0</b>
+						</a>
+					</span>
+					<i class="head_r_line"></i>
+
+					<span class="club">
+						<a href="javascript:;">会员俱乐部</a>
+					</span>
+					<i class="head_r_line"></i>
+
+					<span class="top_nav" style="width:85px;">
+						<a href="javascript:;">
+							网站导航<i></i>
+						</a>
+						<ul class="nav_ul" style="width:72px;">
+							<li><a href="javascript:;">商家入驻</a></li>
+							<li><a href="javascript:;">了解拍鞋网</a></li>
+							<li><a href="javascript:;">拍鞋公益</a></li>
+							<li><a href="javascript:;">网站地图</a></li>
+							<li><a href="javascript:;">新手帮助</a></li>
+						</ul>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- head_mid -->
+		<div class="head_mid">
+			<div class="head_logo">
+				<a href="javascript:;"></a>
+			</div>
+			<div class="head_ad"></div>
+			<div class="search">
+				<form action="javascript:;">
+					<input type="text" class="search_area"/>
+					<button type="submit" class="btn">搜索</button>
+					<div class="head_solist" id="head_solist">
+						<!-- <ul class="searchul">
+							
+						</ul> -->
+					</div>
+				</form>
+				<div class="hot_search">
+					<a href="javascript:;" class="red1">开学大促</a>
+					<a href="javascript:;">跑步鞋</a>
+					<a href="javascript:;">男士凉鞋</a>
+					<a href="javascript:;" class="red1">女士凉鞋</a>
+					<a href="javascript:;">小白鞋</a>
+					<a href="javascript:;">百搭T恤</a>
+					<a href="javascript:;" class="red1">达芙妮59元2双</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- head_nav -->
+		<div class="head_nav">
+			<div class="head_con">
+				<div class="all_goods">
+					<a href="javascript:;">全部商品分类</a>
+				</div>
+				<div class="all_nav">
+					<a href="index.html">首页</a>
+					<a href="javascript:;">爱团购</a>
+					<a href="javascript:;">
+						<i class="hot"></i>闪购</a>
+					
+					<a href="javascript:;">
+						<i class="new"></i>今日特价</a>
+
+					<div class="head_qr">
+						<a href="javascript:;" title="拍鞋APP"></a>
+					</div>	
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- content -->
+	<div class="content">
+		<div class="con_head">
+			<div class="con_nav">
+				<ul class="nav_list">
+					<li>
+						<span class="goods_title">
+							<h3>
+							<i class="sport"></i>运动馆</h3>
+						</span>
+						<p class="goods_sort">
+							<a href="javascript:;">板鞋</a>
+							<a href="javascript:;">跑步鞋</a>
+							<a href="javascript:;">休闲鞋</a>
+							<a href="javascript:;">篮球鞋</a>
+						</p>
+						<div class="nav_box hide">
+							<div class="nav_box_right">
+								<a class="close" href="javascript:;"></a>
+								<span class="nav_img">
+									<a href="javascript:;"><img src="img/nav_img_1.jpg" alt=""></a>
+								</span>
+							</div>
+							<div class="nav_box_left">
+								<h3 class="nav_left_tit">运动鞋</h3>
+								<span>
+									<a href="http://www.paixie.net/p-m000001s000028_1.html#yun">跑步鞋</a>
+ 									<a href="html/goodslist.html">板鞋</a>
+ 									<a href="http://www.paixie.net/p-m000001s000014_1.html#yun">篮球鞋</a>
+ 									<a href="http://www.paixie.net/p-m000001s000022_1.html#yun">运动休闲鞋</a>
+ 									<a href="http://www.paixie.net/p-m000001s000055_1.html#yun">综训鞋</a>
+ 									<a href="http://www.paixie.net/p-m000001s000064_1.html#yun">帆布鞋</a>
+ 									<a href="http://www.paixie.net/p-m000001s000007_1.html#yun">足球鞋</a>
+ 									<a href="http://www.paixie.net/p-m000001s000029_1.html#yun">网球鞋</a>
+ 									<a href="http://www.paixie.net/p-_复古鞋__1.html#yun">复古鞋</a>
+ 								</span>
+ 								<h3>运动服</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000178s000184_1.html#yun">运动T恤</a>
+									<a href="http://www.paixie.net/p-m000178s000192_1.html#yun">运动POLO衫</a>
+									<a href="http://www.paixie.net/p-m000178s000185_1.html#yun">卫衣套头衫</a>
+									<a href="http://www.paixie.net/p-m000178s000191_1.html#yun">运动套装</a>
+									<a href="http://www.paixie.net/p-m000178s000186_1.html#yun">运动风衣</a>
+									<a href="http://www.paixie.net/p-m000178s000187_1.html#yun">夹克</a>
+									<a href="http://www.paixie.net/p-m000178s000195_1.html#yun">短裤</a>
+								</span>
+ 								<h3>潮流运动</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m0001_1.html#yun">运动鞋</a>
+ 									<a href="http://www.paixie.net/originals/#yun">三叶草</a>
+ 									<a href="http://www.paixie.net/p-m000217s000228_1.html#yun">潮流包包</a>
+ 									<a href="http://www.paixie.net/p-adidas__m000001_1.html#url:/p-adidas__m000001_id_1.html#yun">阿迪新款</a>
+ 									<a href="http://www.paixie.net/p-nikePXnike360PXerke_阿甘__1.html#yun#yun">阿甘系列</a>
+ 									<a href="http://www.paixie.net/forbid/p-__23879_de;1.html#yun">AIR MAX</a>
+ 									<a href="http://www.paixie.net/forbid/p-nike__m000001_1.html#yun">耐克爆款</a>
+ 								</span>
+ 								<h3>运动配件</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000435s000449_sd_1.html#yun">瑜伽用品</a>
+ 									<a href="http://www.paixie.net/p-m000217s000228_1.html#yun">双肩背包</a>
+ 									<a href="http://www.paixie.net/p-m000217s000228_1.html#yun">单肩包</a>
+ 									<a href="http://www.paixie.net/p-m000217s000237_1.html#yun">运动袜子</a>
+ 									<a href="http://www.paixie.net/p-m000217s000240_1.html#yun">运动帽</a>
+ 									<a href="http://www.paixie.net/p-m000217s000241_1.html#yun">运动护具</a>
+ 									<a href="http://www.paixie.net/p-m000217s000224_1.html#yun">休闲包</a>
+ 									<a href="http://www.paixie.net/p-m000217s000229_1.html#yun">手套</a>
+ 								</span>
+ 								<h3>价格搜索区间</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000001p00001z__1.html#yun">0-99</a>
+ 									<a href="http://www.paixie.net/p-__m000001p01A037_de_1.html#yun">100-199</a>
+ 									<a href="http://www.paixie.net/p-__m000001p03804H_de_1.html#yun">200-299</a>
+ 									<a href="http://www.paixie.net/p-__m000001p04I06f_de_1.html#yun">300-399</a>
+ 									<a href="http://www.paixie.net/p-__m000001p06g07P_de_1.html#yun">400-499</a>
+ 								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="goods_title">
+							<h3>
+							<i class="women"></i>女鞋馆</h3>
+						</span>
+						<p class="goods_sort">
+							<a href="javascript:;">夏季新品</a>
+							<a href="javascript:;">凉鞋</a>
+							<a href="javascript:;">单鞋</a>
+							<a href="javascript:;">休闲鞋</a>
+						</p>
+						<div class="nav_box hide">
+							<div class="nav_box_right">
+								<a class="close" href="javascript:;"></a>
+								<span class="nav_img">
+									<a href="javascript:;"><img src="img/nav_img_2.jpg" alt=""></a>
+								</span>
+							</div>
+							<div class="nav_box_left">
+								<h3 class="nav_left_tit">热销品牌</h3>
+								<span>
+									<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+ 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+ 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+ 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+ 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+ 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+ 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+ 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+ 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+ 								</span>
+ 								<h3>热门推荐</h3>
+ 								<span>
+									<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+ 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+ 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+ 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+ 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+ 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+ 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+ 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+ 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+ 								</span>
+ 								<h3>凉鞋</h3>
+ 								<span>
+									<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+ 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+ 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+ 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+ 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+ 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+ 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+ 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+ 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+ 								</span>
+ 								<h3>单鞋</h3>
+ 								<span>
+									<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+ 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+ 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+ 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+ 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+ 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+ 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+ 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+ 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+ 								</span>
+ 								<h3>休闲鞋</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000003s000135_1.html#url:/p-__m000003s000135_id_1.html#yun">新品</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000069_1.html#yun">系带</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000074_1.html#yun">套脚</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000071_1.html#yun">拉链</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000075_1.html#yun">松紧带</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000070_1.html#yun">魔术贴</a>
+ 								</span>
+ 								<h3>价格搜索区间</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000003p00001z__1.html#yun">0-99</a>
+ 									<a href="http://www.paixie.net/p-__m000003p01A037__1.html#yun">100-199</a>
+ 									<a href="http://www.paixie.net/p-__m000003p03804H__1.html#yun">200-299</a>
+ 									<a href="http://www.paixie.net/p-__m000003p04I06f__1.html#yun">300-399</a>
+ 									<a href="http://www.paixie.net/p-__m000003p06g07P__1.html#yun">400-499</a>
+ 								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="goods_title">
+							<h3>
+							<i class="man"></i>男鞋馆</h3>
+						</span>
+						<p class="goods_sort">
+							<a href="javascript:;">凉鞋</a>
+							<a href="javascript:;">休闲鞋</a>
+							<a href="javascript:;">帆布鞋</a>
+							<a href="javascript:;">豆豆鞋</a>
+						</p>
+						<div class="nav_box hide">
+							<div class="nav_box_right">
+								<a class="close" href="javascript:;"></a>
+								<span class="nav_img">
+									<a href="javascript:;"><img src="img/nav_img_3.jpg" alt=""></a>
+								</span>
+							</div>
+							<div class="nav_box_left">
+								<h3 class="nav_left_tit">热销品牌</h3>
+								<span>
+									<a href="http://www.paixie.net/dodi/#yun">东帝名坊</a>
+ 									<a href="http://www.paixie.net/daphne/#yun">达芙妮</a>
+ 									<a href="http://www.paixie.net/exull/#yun">依思Q</a>
+ 									<a href="http://www.paixie.net/renben/#yun">人本</a>
+ 									<a href="http://www.paixie.net/mingjiang/#yun">名将</a>
+ 									<a href="http://www.paixie.net/lirenge/#yun">骊人阁</a>
+ 									<a href="http://wukaka.paixie.net/#yun">巫卡卡</a>
+ 									<a href="http://www.paixie.net/josiny/#yun">卓诗尼</a>
+ 									<a href="http://www.paixie.net/shoebox/#yun">鞋柜</a>
+ 								</span>
+ 								<h3>热门推荐</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000003s000012_1.html#yun">凉鞋</a>
+ 									<a href="http://www.paixie.net/p-m000003s000161_1.html#yun">帆布鞋</a>
+ 									<a href="http://www.paixie.net/forbid/p-_%E5%B0%8F%E7%99%BD%E9%9E%8B__1.html#yun">小白鞋</a>
+ 									<a href="http://www.paixie.net/p-m000003s000216_1.html#yun">松糕鞋</a>
+ 									<a href="http://www.paixie.net/p-_乐福鞋__1.html#yun">乐福鞋</a>
+ 								</span>
+ 								<h3>凉鞋</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000003s0000120013865_1.html#yun">平底</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0000120006648_1.html#yun">中低跟</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0000120006655_1.html#yun">高跟</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0000120006620_1.html#yun">鱼嘴</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0000120000981_1.html#yun">一字扣</a>
+ 								</span>
+ 								<h3>单鞋</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000003s0000170000069_1.html#yun">系带</a>
+									<a href="http://www.paixie.net/p-__m000003s0000170000074_1.html#yun">套脚</a>
+									<a href="http://www.paixie.net/p-__m000003s0000170000071_1.html#yun">拉链</a>
+									<a href="http://www.paixie.net/p-__m000003s0000170000413_1.html#yun">休闲风</a>
+									<a href="http://www.paixie.net/p-__m000003s0000170000418_1.html#yun">欧美风</a>
+									<a href="http://www.paixie.net/p-__m000003s0000170000420_1.html#yun">英伦风</a>
+								</span>
+ 								<h3>休闲鞋</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000003s000135_1.html#url:/p-__m000003s000135_id_1.html#yun">新品</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000069_1.html#yun">系带</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000074_1.html#yun">套脚</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000071_1.html#yun">拉链</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000075_1.html#yun">松紧带</a>
+ 									<a href="http://www.paixie.net/p-__m000003s0001350000070_1.html#yun">魔术贴</a>
+ 								</span>
+ 								<h3>价格搜索区间</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000003p00001z__1.html#yun">0-99</a>
+ 									<a href="http://www.paixie.net/p-__m000003p01A037__1.html#yun">100-199</a>
+ 									<a href="http://www.paixie.net/p-__m000003p03804H__1.html#yun">200-299</a>
+ 									<a href="http://www.paixie.net/p-__m000003p04I06f__1.html#yun">300-399</a>
+ 									<a href="http://www.paixie.net/p-__m000003p06g07P__1.html#yun">400-499</a>
+ 								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="goods_title">
+							<h3>
+							<i class="cloth"></i>服饰馆</h3>
+						</span>
+						<p class="goods_sort">
+							<a href="javascript:;">女装</a>
+							<a href="javascript:;">男装</a>
+							<a href="javascript:;">人气美裙</a>
+							<a href="javascript:;">牛仔短裤</a>
+						</p>
+						<div class="nav_box hide">
+							<div class="nav_box_right">
+								<a class="close" href="javascript:;"></a>
+								<span class="nav_img">
+									<a href="javascript:;"><img src="img/nav_img_4.jpg" alt=""></a>
+								</span>
+							</div>
+							<div class="nav_box_left">
+								<h3 class="nav_left_tit">热销品牌</h3>
+								<span>
+									<a href="http://mall31196.paixie.net/#yun">泰芝郎</a>
+ 									<a href="http://www.paixie.net/sxming/#yun">斯鑫明</a>
+ 									<a href="http://mall31107.paixie.net/#yun">花花公子</a>
+ 									<a href="http://fanzhelun.paixie.net/#yun">Qigirl</a>
+ 									<a href="http://danleisi.paixie.net/#yun">丹雷斯</a>
+ 									<a href="http://www.paixie.net/weiwei/#yun">唯唯</a>
+ 									<a href="http://www.paixie.net/gejiani/#yun">戈佳妮</a>
+ 								</span>
+ 								<h3>热门推荐</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000332s000349_1.html#yun">连衣裙</a>
+ 									<a href="http://www.paixie.net/p-_T恤___1.html#yun">T恤</a>
+ 									<a href="http://www.paixie.net/p-m000265s000267_1.html#yun">衬衫</a>
+ 									<a href="http://www.paixie.net/p-m000265s000515_1.html#yun">短裤</a>
+ 									<a href="http://www.paixie.net/p-m000265s000274_1.html#yun">牛仔裤</a>
+ 									<a href="http://www.paixie.net/p-m000459s000471_1.html#yun">文胸</a>
+ 								</span>
+ 								<h3>男装</h3>
+ 								<span>
+									<a href="http://www.paixie.net//p-__m000265s000279_id_1.html#yun">T恤</a>
+									<a href="http://www.paixie.net/p-m000265s000267_1.html#yun">衬衫</a>
+									<a href="http://www.paixie.net/p-m000265s000276_1.html#yun">POLO衫</a>
+									<a href="http://www.paixie.net/p-m000265s000266_1.html#yun">背心</a>
+									<a href="http://www.paixie.net/p-m000265s000274_1.html#yun">牛仔裤</a>
+									<a href="http://www.paixie.net/p-m000265s000281_1.html#yun">休闲裤</a>
+								</span>
+ 								<h3>女装</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000332_1.html#yun">夏上新</a>
+ 									<a href="http://www.paixie.net/p-m000332s000341_1.html#yun">衬衫</a>
+ 									<a href="http://www.paixie.net/p-m000332s000359_1.html#yun">T恤</a>
+ 									<a href="http://www.paixie.net/p-__m000332s000340_1.html#yun">半身裙</a>
+ 									<a href="http://www.paixie.net/p-__m000332s000349_id_1.html#yun">连衣裙</a>
+ 									<a href="http://www.paixie.net/p-m000332s000352_1.html#yun">针织衫</a>
+ 									<a href="http://www.paixie.net/p-m000332s000344_1.html#yun">风衣</a>
+ 								</span>
+ 								<h3>春季单品</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000386_1.html#url:/p-__m000386_id_1.html#yun">童装</a>
+ 									<a href="http://www.paixie.net/p-m000265s000276_1.html#yun">POLO衫</a>
+ 									<a href="http://www.paixie.net/p-m000265s000274_1.html#yun">牛仔裤</a>
+ 									<a href="http://www.paixie.net/p-m000459s000493_1.html#yun">睡衣/家居服</a>
+ 								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="goods_title">
+							<h3>
+							<i class="out"></i>户外馆</h3>
+						</span>
+						<p class="goods_sort">
+							<a href="javascript:;">登山鞋</a>
+							<a href="javascript:;">休闲鞋</a>
+							<a href="javascript:;">溯溪鞋</a>
+							<a href="javascript:;">户外鞋</a>
+						</p>
+						<div class="nav_box hide">
+							<div class="nav_box_right">
+								<a class="close" href="javascript:;"></a>
+								<span class="nav_img">
+									<a href="javascript:;"><img src="img/nav_img_5.jpg" alt=""></a>
+								</span>
+							</div>
+							<div class="nav_box_left">
+								<h3 class="nav_left_tit">热卖推荐</h3>
+								<span>
+									<a href="http://www.paixie.net/p-__m000006_id_1.html#yun">户外新品</a>
+ 									<a href="http://www.paixie.net/p-m000006s000049_1.html#yun">登山鞋</a>
+ 									<a href="http://www.paixie.net/p-m000006s000046_1.html#yun">户外休闲鞋</a>
+ 									<a href="http://www.paixie.net/p-m000006s000170_1.html#yun">溯溪鞋</a>
+ 									<a href="http://www.paixie.net/p-m000006s000011_1.html#yun">沙滩鞋</a>
+ 									<a href="http://www.paixie.net/p-m000217_1.html#yun">户外配件</a>
+ 								</span>
+ 								<h3>户外服饰</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000290s000303_1.html#yun">皮肤衣</a>
+ 									<a href="http://www.paixie.net/p-m000290s000321_1.html#yun">速干T恤</a>
+ 									<a href="http://www.paixie.net/p-m000290s000323_1.html#yun">速干裤</a>
+ 									<a href="http://www.paixie.net/p-m000290s000319_1.html#yun">户外套装</a>
+ 									<a href="http://www.paixie.net/p-m000435s000441_1.html#yun">泳衣</a>
+ 								</span>
+ 								<h3>特惠推荐</h3>
+ 								<span>
+									<a href="http://bepure.paixie.net/#yun">宝飘旗舰店</a>
+									<a href="http://tripolar.paixie.net/#yun">Tri-polar旗舰店</a>
+									<a href="http://tulu.paixie.net/#yun">探拓者</a>
+									<a href="http://www.paixie.net/mufeng/#yun">穆峰</a>
+								</span>
+ 								<h3>价格搜索区间</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000006p00001z__1.html#yun">0-99</a>
+ 									<a href="http://www.paixie.net/p-__m000006p01A037__1.html#yun">100-199</a>
+ 									<a href="http://www.paixie.net/p-__m000006p03804H__1.html#yun">200-299</a>
+ 									<a href="http://www.paixie.net/p-__m000006p04I06f__1.html#yun">300-399</a>
+ 									<a href="http://www.paixie.net/p-__m000006p06g07P__1.html#yun">400-499</a>
+ 								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="goods_title">
+							<h3>
+							<i class="child"></i>儿童馆</h3>
+						</span>
+						<p class="goods_sort">
+							<a href="javascript:;">新品童鞋</a>
+							<a href="javascript:;">凉鞋</a>
+							<a href="javascript:;">运动鞋</a>
+							<a href="javascript:;">帆布鞋</a>
+						</p>
+						<div class="nav_box hide" style="top:151px;">
+							<div class="nav_box_right">
+								<a class="close" href="javascript:;"></a>
+								<span class="nav_img">
+									<a href="javascript:;"><img src="img/nav_img_6.jpg" alt=""></a>
+								</span>
+							</div>
+							<div class="nav_box_left">
+								<h3 class="nav_left_tit">热销品牌</h3>
+								<span>
+									<a href="http://mimixiong.paixie.net/#yun">咪咪熊</a>
+ 									<a href="http://bitelong.paixie.net/#yun">比特龙</a>
+ 									<a href="http://mall31207.paixie.net/#yun">吉吉猴</a>
+ 									<a href="http://www.paixie.net/p-361children_m0004_id;1.html#yun">361度</a>
+ 									<a href="http://www.paixie.net/p-erke__m0004_de;1.html#yun">鸿星尔克</a>
+ 								</span>
+ 								<h3>热卖推荐</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000004s000122_1.html#yun">凉鞋</a>
+ 									<a href="http://www.paixie.net/p-_公主鞋__1.html#yun">公主鞋</a>
+ 									<a href="http://www.paixie.net/p-m000004s000121_1.html#yun">儿童运动鞋</a>
+ 									<a href="http://www.paixie.net/p-m000004s000124_1.html#yun">童皮鞋</a>
+ 									<a href="http://www.paixie.net/p-m000004s000115_1.html#yun">学步鞋</a>
+ 									<a href="http://www.paixie.net/p-__m0003860000590_1.html#yun">男童装</a>
+ 									<a href="http://www.paixie.net/p-__m0003860000591_1.html#yun">女童装</a>
+ 								</span>
+ 								<h3>童鞋</h3>
+ 								<span>
+									<a href="http://mall31207.paixie.net/#yun">凉鞋</a>
+									<a href="http://www.paixie.net/p-m000004s000121_1.html#yun">运动鞋</a>
+									<a href="http://www.paixie.net/p-m000004s000123_1.html#yun">帆布鞋</a>
+									<a href="http://www.paixie.net/p-m000004s000124_1.html#yun">童皮鞋</a>
+									<a href="http://www.paixie.net/p-m000004s000168_1.html#yun">亲子鞋</a>
+									<a href="http://www.paixie.net/p-_公主鞋__1.html#yun">公主鞋</a>
+									<a href="http://www.paixie.net/p-_全能鞋__1.html#yun">全能鞋</a>
+								</span>
+ 								<h3>童装</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-m000386s000405_1.html#yun">T恤</a>
+ 									<a href="http://www.paixie.net/p-m000386s000387_1.html#yun">衬衫</a>
+ 									<a href="http://www.paixie.net/p-m000386s000403_1.html#yun">裙子</a>
+ 									<a href="http://www.paixie.net/p-m000386s000406_1.html#yun">套装</a>
+ 									<a href="http://www.paixie.net/p-m000386s000396_1.html#yun">裤子</a>
+ 									<a href="http://www.paixie.net/p-m000386s000408_1.html#yun">外套</a>
+ 								</span>
+ 								<h3>价格搜索区间</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000004p00001z__1.html#yun">0-99</a>
+ 									<a href="http://www.paixie.net/p-__m000004p01A037__1.html#yun">100-199</a>
+ 									<a href="http://www.paixie.net/p-__m000004p03804H__1.html#yun">200-299</a>
+ 								</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="goods_title">
+							<h3>
+							<i class="box_bag"></i>箱包馆</h3>
+						</span>
+						<p class="goods_sort">
+							<a href="javascript:;">男包</a>
+							<a href="javascript:;">女包</a>
+							<a href="javascript:;">旅行箱包</a>
+							<a href="javascript:;">精品家纺</a>
+						</p>
+						<div class="nav_box hide" style="top:151px;">
+							<div class="nav_box_right">
+								<a class="close" href="javascript:;"></a>
+								<span class="nav_img">
+									<a href="javascript:;"><img src="img/nav_img_6.jpg" alt=""></a>
+								</span>
+							</div>
+							<div class="nav_box_left">
+								<h3 class="nav_left_tit">热销品牌</h3>
+								<span>
+									<a href="http://www.paixie.net/ruishijundao/#yun">瑞士军刀</a>
+ 									<a href="http://www.paixie.net/ukuk/#yun">优客优可</a>
+ 									<a href="http://danjue.paixie.net/#yun">丹爵</a>
+ 									<a href="http://mall31187.paixie.net/#yun">代代花枳</a>
+ 									<a href="http://www.paixie.net/boliyashi/#yun">柏丽雅诗</a>
+ 									<a href="http://www.paixie.net/yulu/#yun">玉鹭</a>
+ 									<a href="http://www.paixie.net/langsha/#yun">浪莎</a>
+ 								</span>
+ 								<h3>女包</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-_女包__id_1.html#yun">上新</a>
+ 									<a href="http://www.paixie.net/p-_女+钱包__id;1.html#yun">钱包</a>
+ 									<a href="http://www.paixie.net/temai/5111.html#yun">手提包</a>
+ 									<a href="http://www.paixie.net/temai/5109.html#yun">单肩包</a>
+ 									<a href="http://www.paixie.net/p-__m000217s0002280001085_1.html#yun">双肩包</a>
+ 									<a href="http://wwwhttp://www.paixie.net/p-m000177s000206_1.html#yun">旅行箱</a>
+ 								</span>
+ 								<h3>男包</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-_男包__id_1.html#yun">新品</a>
+ 									<a href="http://www.paixie.net/p-m000217s000236_1.html#yun">腰包</a>
+ 									<a href="http://www.paixie.net/p-_男钱包__1.html#yun">钱包</a>
+ 									<a href="http://www.paixie.net/p-_男商务包__1.html#yun">商务包</a>
+ 									<a href="http://www.paixie.net/p-_男双肩包__1.html#yun">双肩包</a>
+ 									<a href="http://www.paixie.net/p-m000177s000206_1.html#yun">旅行箱</a>
+ 								</span>
+ 								<h3>家纺</h3>
+ 								<span>
+									<a href="http://www.paixie.net/p-__m000511_id_1.html#yun">新品</a>
+ 									<a href="http://www.paixie.net/p-m000513s000521_1.html#yun">床上用品</a>
+ 									<a href="http://www.paixie.net/p-m000513s000539_1.html#yun">婴童床品</a>
+ 									<a href="http://www.paixie.net/p-m000513s000563_1.html#yun">蚊帐</a>
+ 									<a href="http://www.paixie.net/p-m000513s000523_1.html#yun">床上多件套</a>
+ 									<a href="http://www.paixie.net/p-m000513s000527_1.html#yun">靠枕/枕头</a>
+ 								</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="more_band">
+					<a href="javascript:;">
+						<img src="img/band_0.jpg" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="con_mid">
+				<div class="banner">
+					<ul class="ban_list">
+						<li><a href="javascript:;"><img src="img/ban_1.jpg" alt="" /></a></li>
+						<li><a href="javascript:;"><img src="img/ban_2.jpg" alt="" /></a></li>
+						<li><a href="javascript:;"><img src="img/ban_3.jpg" alt="" /></a></li>
+						<li><a href="javascript:;"><img src="img/ban_4.jpg" alt="" /></a></li>
+						<li><a href="javascript:;"><img src="img/ban_5.jpg" alt="" /></a></li>
+					</ul>
+					<p>
+						<a class="active" href="javascript:;">1</a>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;">3</a>
+						<a href="javascript:;">4</a>
+						<a href="javascript:;">5</a>
+					</p>
+					<a class="prev" href="javascript:;"></a>
+					<a class="next" href="javascript:;"></a>
+				</div>
+				<div class="con_band_title">
+					<span>品牌活动</span>
+				</div>
+				<div class="band_con">
+					<a href="javascript:;">
+						<img src="img/band_1.jpg" alt="" />
+					</a>
+					<a href="javascript:;">
+						<img src="img/band_2.jpg" alt="" />
+					</a>
+					
+					<a href="javascript:;">
+						<img src="img/band_3.jpg" alt="" />
+					</a>
+				</div>
+				<div class="band_ex">
+					<a href="javascript:;"><img src="img/band_4.jpg" alt="" /></a>
+					<a href="javascript:;"><img src="img/band_5.jpg" alt="" /></a>
+					<a href="javascript:;"><img src="img/band_6.jpg" alt="" /></a>
+				</div>
+			</div>
+			<div class="side_info">
+				<div class="side_icon">
+					<a href="javascript:;">
+						<i></i>
+						<b>会员专享</b>
+					</a>
+					<a href="javascript:;">
+						<i class="icon_b"></i>
+						<b>去领券</b>
+					</a>
+					<a href="javascript:;">
+						<i class="icon_c"></i>
+						<b>抽奖</b>
+					</a>
+				</div>
+				<div class="side_post">
+					<span class="post_title">
+						<a href="javascript:;">更多></a>
+						<b>拍鞋快报</b>
+					</span>
+					<p class="side_text">
+						<a href="javascript:;">【公告】今日特价上线啦！</a>
+						<a href="javascript:;">【公告】拍鞋白条上线啦！ </a>
+						<a href="javascript:;">【会员福利】登录领劵，下单更优惠</a>
+					</p>
+				</div>
+				<div class="side_img">
+					<a href="javascript:;"><img src="img/side_img_1.jpg" alt="" /></a>
+				</div>
+				<div class="side_recor">
+					<a class="on" href="javascript:;">推荐商铺</a>
+					<a href="javascript:;">热销品牌</a>
+				</div>
+				<div class="side_recor_img">
+					<ul class="on">
+						<li><a href="javascript:;"><img src="img/side_img[1].jpg" alt="" /></a></li>
+						<li><a href="javascript:;"><img src="img/side_img[2].jpg" alt="" /></a></li>
+						<li><a href="javascript:;"><img src="img/side_img[3].jpg" alt="" /></a></li>
+					</ul>
+					<ul>
+						<li><a href="javascript:;"><img src="img/side_img[1].jpg" alt="" /></a></li>
+						<li><a href="javascript:;"><img src="img/side_img[2].jpg" alt="" /></a></li>
+						<li><a href="javascript:;"><img src="img/side_img[3].jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- content_body -->
+		<div class="content_body">
+			<div class="body_tuan clear">
+				<div class="tuan_title">
+					<a href="javascript:;" class="change_next">换一批</a>
+					<b><a href="javascript:;">爱团购</a></b>
+					<div class="turn_twoli">
+						<span class="on">精选品牌</span>
+						<span><i class="addtion"></i>最新上架</span>
+						<b class="linebox"></b>
+					</div>
+				</div>
+				<div class="alllist">
+					<ul class="list_a">
+						<li>
+							<a href="javascript:;"><img src="img/li_1.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_2.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_3.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_4.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_5.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_6.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+					</ul>
+					<ul class="list_b hide">
+						<li>
+							<a href="javascript:;"><img src="img/li_7.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_8.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_9.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_10.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_11.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/li_12.jpg" alt="" /></a>
+							<p class="count">
+								<span>
+									<em></em>
+									<i>倒计时</i>
+									<b>03天22:22:15</b>
+								</span>
+							</p>
+							<p class="price">
+								<del>¥1198.00</del>
+								|
+								<b>¥139.00</b>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="body_sport clear flr">
+				<div class="body_title">
+					<a href="javascript:;">更多</a>
+					<i class="floor">F1</i>
+					<h2 class="tit">
+						运动
+						<i class="v_line">|</i>
+						户外
+					</h2>
+					<span class="li_choose">
+						<a class="on" href="javascript:;">运动鞋</a>
+						<a href="javascript:;">运动服</a>
+						<a href="javascript:;">户外热卖</a>
+						<b class="bottom_line"></b>
+					</span>
+				</div>
+				<div class="good_sort">
+					<div class="good_hot">
+						<a href="javascript:;" class="hot_img">
+							<img src="img/spotr_hot_1.jpg" alt="" />
+						</a>
+						<div class="hot_txt">
+							<span class="hot_tit">热卖</span>
+							<span>
+								<a href="javascript:;">跑步鞋</a>
+								<a href="javascript:;">N字鞋</a>
+								<a href="javascript:;">篮球鞋</a>
+								<a href="javascript:;">运动双肩包</a>
+								<a href="javascript:;">AIR</a>
+								<a href="javascript:;">MAX</a>
+								<a href="javascript:;">运动T恤</a>
+								<a href="javascript:;">休闲鞋</a>
+								<a href="javascript:;">登山鞋</a>
+								<a href="javascript:;">户外鞋</a>
+							</span>
+							<a href="javascript:;" class="txt_open">
+								<i class=""></i>
+							</a>
+						</div>
+						<div class="hot_txt_b">
+							<span class="hot_tit">特色</span>
+							<span class="hot_spec">
+								<a href="javascript:;">减震</a>
+								<a href="javascript:;">防滑</a>
+								<a href="javascript:;">耐磨</a>
+								<a href="javascript:;">透气</a>
+								<a href="javascript:;">缓冲</a>
+								<a href="javascript:;">气垫</a>
+								<a href="javascript:;">毛绒皮</a>
+							</span>
+						</div>
+					</div>
+					<div class="sort_hot_list">
+						<div class="hot_list">
+							<ul class="list_ul show">
+								<li>
+									<a href="html/goodInfo.html"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="list_ul">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="list_ul">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bandli">
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+			<div class="body_women clear flr">
+				<div class="body_title">
+					<a href="javascript:;">更多</a>
+					<i class="floor" style="background:#FFCAD0">F2</i>
+					<h2 class="tit">
+						女鞋
+						<i class="v_line">|</i>
+						女装
+					</h2>
+					<span class="li_choose">
+						<a class="on" href="javascript:;">人气凉鞋</a>
+						<a href="javascript:;">热销单鞋</a>
+						<a href="javascript:;">时尚女装</a>
+						<b class="bottom_line" style="background-position:0 -16px;"></b>
+					</span>
+				</div>
+				<div class="good_sort">
+					<div class="good_hot">
+						<a href="javascript:;" class="hot_img">
+							<img src="img/spotr_hot_1.jpg" alt="" />
+						</a>
+						<div class="hot_txt">
+							<span class="hot_tit">热卖</span>
+							<span>
+								<a href="javascript:;">凉鞋</a>
+								<a href="javascript:;">单鞋</a>
+								<a href="javascript:;">休闲鞋</a>
+								<a href="javascript:;">松糕鞋</a>
+								<a href="javascript:;">连衣裙</a>
+								<a href="javascript:;">T恤</a>
+								<a href="javascript:;">短裤</a>
+								<a href="javascript:;">牛仔裤</a>
+							</span>
+							<a href="javascript:;" class="txt_open">
+								<i class=""></i>
+							</a>
+						</div>
+						<div class="hot_txt_b">
+							<span class="hot_tit">特色</span>
+							<span class="hot_spec">
+								<a href="javascript:;">高跟</a>
+								<a href="javascript:;">平底</a>
+								<a href="javascript:;">套脚</a>
+								<a href="javascript:;">内增高</a>
+								<a href="javascript:;">魔术贴</a>
+								<a href="javascript:;">拉链</a>
+								<a href="javascript:;">布面</a>
+							</span>
+						</div>
+					</div>
+					<div class="sort_hot_list">
+						<div class="hot_list">
+							<ul class="list_ul show">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="list_ul">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="list_ul">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bandli" style="background:url(img/banli_women.png) no-repeat">
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+			<div class="body_men clear flr">
+				<div class="body_title">
+					<a href="javascript:;">更多</a>
+					<i class="floor" style="background: #A8C3F8;">F3</i>
+					<h2 class="tit">
+						男鞋
+						<i class="v_line">|</i>
+						男装
+					</h2>
+					<span class="li_choose">
+						<a class="on" href="javascript:;">休闲鞋</a>
+						<a href="javascript:;">型格凉鞋</a>
+						<a href="javascript:;">热卖男装</a>
+						<b class="bottom_line" style="background-position:0 -33px;"></b>
+					</span>
+				</div>
+				<div class="good_sort">
+					<div class="good_hot">
+						<a href="javascript:;" class="hot_img">
+							<img src="img/spotr_hot_1.jpg" alt="" />
+						</a>
+						<div class="hot_txt">
+							<span class="hot_tit">热卖</span>
+							<span>
+								<a href="javascript:;">正装皮鞋</a>
+								<a href="javascript:;">休闲鞋</a>
+								<a href="javascript:;">凉鞋</a>
+								<a href="javascript:;">懒人鞋</a>
+								<a href="javascript:;">帆布鞋</a>
+								<a href="javascript:;">衬衫</a>
+								<a href="javascript:;">牛仔裤</a>
+								<a href="javascript:;">休闲裤</a>
+								<a href="javascript:;">西服</a>
+								<a href="javascript:;">夹克</a>
+							</span>
+							<a href="javascript:;" class="txt_open">
+								<i class=""></i>
+							</a>
+						</div>
+						<div class="hot_txt_b">
+							<span class="hot_tit">特色</span>
+							<span class="hot_spec">
+								<a href="javascript:;">系带</a>
+								<a href="javascript:;">套脚</a>
+								<a href="javascript:;">拉链</a>
+								<a href="javascript:;">正装</a>
+								<a href="javascript:;">休闲</a>
+								<a href="javascript:;">反绒皮</a>
+								<a href="javascript:;">迷彩</a>
+							</span>
+						</div>
+					</div>
+					<div class="sort_hot_list">
+						<div class="hot_list">
+							<ul class="list_ul show">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="list_ul">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="list_ul">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bandli" style="background:url(img/banli_men.jpg) no-repeat">
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+			<div class="body_child clear flr">
+				<div class="body_title">
+					<a href="javascript:;">更多</a>
+					<i class="floor" style="background: #64D2BA">F4</i>
+					<h2 class="tit">
+						童鞋
+						<i class="v_line">|</i>
+						童装
+					</h2>
+					<span class="li_choose">
+						<a class="on" href="javascript:;">潮童风采</a>
+						<a href="javascript:;">运动鞋</a>
+						<b class="bottom_line" style="background-position:0 -84px;"></b>
+					</span>
+				</div>
+				<div class="good_sort">
+					<div class="good_hot">
+						<a href="javascript:;" class="hot_img">
+							<img src="img/spotr_hot_1.jpg" alt="" />
+						</a>
+						<div class="hot_txt">
+							<span class="hot_tit">热卖</span>
+							<span>
+								<a href="javascript:;">休闲鞋</a>
+								<a href="javascript:;">运动鞋</a>
+								<a href="javascript:;">公主鞋</a>
+								<a href="javascript:;">宝宝鞋</a>
+								<a href="javascript:;">衬衫</a>
+								<a href="javascript:;">帆布鞋</a>
+								<a href="javascript:;">连衣裙</a>
+								<a href="javascript:;">裤子</a>
+								<a href="javascript:;">亲子装</a>
+								<a href="javascript:;">双肩包</a>
+							</span>
+							<a href="javascript:;" class="txt_open">
+								<i class=""></i>
+							</a>
+						</div>
+						<div class="hot_txt_b">
+							<span class="hot_tit">特色</span>
+							<span class="hot_spec">
+								<a href="javascript:;">铆钉</a>
+								<a href="javascript:;">卡通</a>
+								<a href="javascript:;">拼接</a>
+								<a href="javascript:;">斗篷</a>
+								<a href="javascript:;">魔术贴</a>
+								<a href="javascript:;">水钻</a>
+								<a href="javascript:;">绣花</a>
+							</span>
+						</div>
+					</div>
+					<div class="sort_hot_list">
+						<div class="hot_list">
+							<ul class="list_ul show">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="list_ul">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bandli" style="background:url(img/banli_child.jpg) no-repeat">
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+			<div class="body_bag clear flr">
+				<div class="body_title">
+					<a href="javascript:;">更多</a>
+					<i class="floor" style="background: #C8D1DA">F5</i>
+					<h2 class="tit">
+						箱包
+						<i class="v_line">|</i>
+						家纺
+					</h2>
+					<span class="li_choose">
+						<a class="on" href="javascript:;">魅力女包</a>
+						<a href="javascript:;">床上用品</a>
+						<b class="bottom_line" style="background-position:0 -67px;"></b>
+					</span>
+				</div>
+				<div class="good_sort">
+					<div class="good_hot">
+						<a href="javascript:;" class="hot_img">
+							<img src="img/spotr_hot_1.jpg" alt="" />
+						</a>
+						<div class="hot_txt">
+							<span class="hot_tit">热卖</span>
+							<span>
+								<a href="javascript:;">旅行箱</a>
+								<a href="javascript:;">单肩包</a>
+								<a href="javascript:;">双肩包</a>
+								<a href="javascript:;">商务包</a>
+								<a href="javascript:;">钱包</a>
+								<a href="javascript:;">四件套</a>
+								<a href="javascript:;">蚊帐</a>
+								<a href="javascript:;">床垫</a>
+								<a href="javascript:;">子母包</a>
+							</span>
+							<a href="javascript:;" class="txt_open">
+								<i class=""></i>
+							</a>
+						</div>
+						<div class="hot_txt_b">
+							<span class="hot_tit">特色</span>
+							<span class="hot_spec">
+								<a href="javascript:;">格子</a>
+								<a href="javascript:;">复古</a>
+								<a href="javascript:;">荷叶边</a>
+								<a href="javascript:;">商务</a>
+								<a href="javascript:;">学院</a>
+								<a href="javascript:;">欧美</a>
+								<a href="javascript:;">卡通</a>
+							</span>
+						</div>
+					</div>
+					<div class="sort_hot_list">
+						<div class="hot_list">
+							<ul class="list_ul show">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="list_ul">
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;"><img src="img/hot_goods_1.jpg" alt="" />
+										<span>康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</span>
+										<span class="price">¥59.00</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="bandli" style="background:url(img/banli_bag.jpg) no-repeat">
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</div>
+			<div class="body_band clear">
+				<div class="set_band">
+					<span class="band_tit">品牌入驻</span>
+					<div class="pptplay">
+						<a href="javascript:;"><img src="img/free_band.jpg"></a>
+					</div>
+				</div>
+				<div class="set_band">
+					<span class="band_tit">拍鞋影响力</span>
+					<div class="pic_banner">
+						<ul class="pic_move">
+							<li class="on"><a href="javascript:;"><img src="img/band_ban_1.jpg" alt=""></a></li>
+							<li class=""><a href="javascript:;"><img src="img/band_ban_2.jpg" alt=""></a></li>
+							<li class=""><a href="javascript:;"><img src="img/band_ban_3.jpg" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="pic_choose">
+						<a class="on" href="javascript:;">
+							<span></span>
+							<img src="img/band_ban_small_1.jpg" alt="">
+						</a>
+						<a href="javascript:;">
+							<span></span>
+							<img src="img/band_ban_small_2.jpg" alt="">
+						</a>
+						<a href="javascript:;">
+							<span></span>
+							<img src="img/band_ban_small_3.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="set_band noMarginRight">
+					<span class="band_tit">媒体报道</span>
+					<div class="newstext">
+						<a class="news_pic" href="javascript:;">
+							<img src="img/news_pic.jpg" alt="">
+						</a>
+						<div class="news_list">
+							<p><a href="javascript:;">问世间钱为何物，直叫英雄肝胆俱裂！</a></p>
+							<p><a href="javascript:;">今年竟没有“年三十”！你发现了吗</a></p>
+							<p><a href="javascript:;">有效解决鞋子磨脚问题的技能，必须收藏！</a></p>
+							<p><a href="javascript:;">鞋子太多不够放？一根管子搞定！</a></p>
+						</div>
+					</div>
+					<span class="band_tit">品牌资讯</span>
+					<div class="newstext">
+						<a class="news_pic" href="javascript:;">
+							<img src="img/news_pic_2.jpg" alt="">
+						</a>
+						<div class="news_list">
+							<p><a href="javascript:;">耐克自绑鞋带鞋先从NBA入手</a></p>
+							<p><a href="javascript:;">特步发力主攻青少年运动市场</a></p>
+							<p><a href="javascript:;">富贵鸟时尚秋冬鞋发布</a></p>
+							<p><a href="javascript:;">顾客将可以自行打造阿迪达斯运动鞋</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="body_onseason clear">
+				<div class="season_line">
+					<span>当季正在穿</span>
+				</div>
+				<div class="onseason_list">
+					<ul id="list_circle">
+						<li>
+							<span class="list_img">
+								<a href="javascript:;">
+									<i>运动馆</i>
+									<img src="img/onseason_1.jpg" alt="">
+								</a>
+							</span>
+							<span class="list_txt">
+								<a href="javascript:;">舒适跑鞋</a>
+								<a href="javascript:;">百搭板鞋</a>
+								<a href="javascript:;">篮球鞋</a>
+								<a href="javascript:;">运动服饰</a>
+								<a href="javascript:;">帆布鞋</a>
+								<a href="javascript:;">运动休闲鞋</a>
+							</span>
+						</li>
+						<li>
+							<span class="list_img">
+								<a href="javascript:;">
+									<i>女鞋馆</i>
+									<img src="img/onseason_2.jpg" alt="">
+								</a>
+							</span>
+							<span class="list_txt">
+								<a href="javascript:;">女鞋上新</a>
+								<a href="javascript:;">优雅高鞋</a>
+								<a href="javascript:;">甜美女单</a>
+								<a href="javascript:;">欧范休闲</a>
+								<a href="javascript:;">百搭帆布</a>
+								<a href="javascript:;">性感凉鞋</a>
+							</span>
+						</li>
+						
+						<li>
+							<span class="list_img">
+								<a href="javascript:;">
+									<i>男鞋馆</i>
+									<img src="img/onseason_3.jpg" alt="">
+								</a>
+							</span>
+							<span class="list_txt">
+								<a href="javascript:;">休闲鞋</a>
+								<a href="javascript:;">商务皮鞋</a>
+								<a href="javascript:;">休闲皮鞋</a>
+								<a href="javascript:;">隐形增高</a>
+								<a href="javascript:;">经典帆布</a>
+								<a href="javascript:;">工装鞋</a>
+							</span>
+						</li>
+						<li>
+							<span class="list_img">
+								<a href="javascript:;">
+									<i>户外馆</i>
+									<img src="img/onseason_4.jpg" alt="">
+								</a>
+							</span>
+							<span class="list_txt">
+								<a href="javascript:;">登山鞋</a>
+								<a href="javascript:;">徒步旅行</a>
+								<a href="javascript:;">户外背包</a>
+								<a href="javascript:;">溯溪鞋</a>
+								<a href="javascript:;">帆布鞋</a>
+								<a href="javascript:;">户外休闲装</a>
+							</span>
+						</li>
+						<li>
+							<span class="list_img">
+								<a href="javascript:;">
+									<i>儿童馆</i>
+									<img src="img/onseason_5.jpg" alt="">
+								</a>
+							</span>
+							<span class="list_txt">
+								<a href="javascript:;">儿童衬衫</a>
+								<a href="javascript:;">公主鞋</a>
+								<a href="javascript:;">篮球鞋</a>
+								<a href="javascript:;">童皮鞋</a>
+								<a href="javascript:;">学步鞋</a>
+								<a href="javascript:;">春季童装</a>
+							</span>
+						</li>
+						
+						<li>
+							<span class="list_img">
+								<a href="javascript:;">
+									<i>服饰馆</i>
+									<img src="img/onseason_6.jpg" alt="">
+								</a>
+							</span>
+							<span class="list_txt">
+								<a href="javascript:;">百搭T恤</a>
+								<a href="javascript:;">牛仔裤</a>
+								<a href="javascript:;">时尚箱包</a>
+								<a href="javascript:;">型尚男装</a>
+								<a href="javascript:;">潮流女装</a>
+								<a href="javascript:;">连衣裙</a>
+							</span>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="body_foot">
+				<div class="foot_icon">
+					<div class="foot_icon_li">
+						<span>
+							<i class="icon_1"></i>
+							<b><a href="javascript:;">正品保证 假一赔十</a></b>
+						</span>
+					</div>
+					<div class="foot_icon_li">
+						<span>
+							<i class="icon_2"></i>
+							<b><a href="javascript:;">货到付款 全国范围</a></b>
+						</span>
+					</div>
+					<div class="foot_icon_li">
+						<span>
+							<i class="icon_3"></i>
+							<b><a href="javascript:;">10天保值 差价返还</a></b>
+						</span>
+					</div>
+					<div class="foot_icon_li">
+						<span>
+							<i class="icon_4"></i>
+							<b><a href="javascript:;">满129元包邮</a></b>
+						</span>
+					</div>
+					<div class="foot_icon_li">
+						<span>
+							<i class="icon_5"></i>
+							<b><a href="javascript:;">15天无理由 免邮退换货</a></b>
+						</span>
+					</div>
+				</div>
+				<div class="foot_nav">
+					<dl>
+						<dd class="help">
+							<b>新手帮助</b>
+							<span><a href="javascript:;">注册会员</a></span>
+							<span><a href="javascript:;">如何购物</a></span>
+							<span><a href="javascript:;">拍鞋币说明</a></span>
+							<span><a href="javascript:;">优惠券说明</a></span>
+						</dd>
+						<dd class="pay">
+							<b>支付方式</b>
+							<span><a href="javascript:;">支付宝快捷支付</a></span>
+							<span><a href="javascript:;">网上银行支付</a></span>
+							<span><a href="javascript:;">货到付款</a></span>
+							<span><a href="javascript:;">运费说明</a></span>
+						</dd>
+						<dd class="serve_sale">
+							<b>售后服务</b>
+							<span><a href="javascript:;">退换货政策说明</a></span>
+							<span><a href="javascript:;">如何办理退货</a></span>
+							<span><a href="javascript:;">退款详细说明</a></span>
+						</dd>
+						<dd class="about">
+							<b>关于拍鞋网</b>
+							<span><a href="javascript:;">了解拍鞋网</a></span>
+							<span><a href="javascript:;">商家入驻</a></span>
+							<span><a href="javascript:;">联系我们</a></span>
+							<span><a href="javascript:;">拍鞋招聘</a></span>
+						</dd>
+						<dd class="serve_online">
+							<b>客服中心</b>
+							<span><a href="javascript:;">客户电话：4008 818283</a></span>
+							<span><a href="javascript:;">售后专线：0595-85245622441</a></span>
+							<span><a href="javascript:;">服务时间：周一到周日8:00-23:30</a></span>
+						</dd>
+						<dd class="moble">
+							<b>拍鞋网客户端</b>
+							<p>随时随地上拍鞋网！</p>
+							<span class="qcode"></span>
+						</dd>
+						<dd>
+							<b>拍鞋微信</b>
+							<p>查订单更便捷</p>
+							<span class="wcode">
+								<p class="share">
+									<a class="weibo" href="javascript:;"></a>
+									<a class="qzone" href="javascript:;"></a>
+								</p>
+							</span>
+						</dd>
+					</dl>
+				</div>
+				<div class="foot_copyright">
+					<span>Copyright &copy;  2007-2016 Paixie.net All Rights Reserved 闽B2-20110084</span>
+				</div>
+				<div class="foot_link">
+					<div class="link_show"></div>
+					<b>友情链接: </b>
+					<a href="http://www.bloves.com/" target="_blank">钻戒</a>
+					<a href="http://www.laobiao.com" target="_blank">江西老表网</a>
+					<a href="http://www.258.com/" target="_blank">258企业服务平台</a>
+					<a href="http://www.waibotu.com/" target="_blank">返利网</a>
+					<a href="http://www.easeeyes.com" target="_blank">美瞳</a>
+					<a href="http://www.99114.com" target="_blank">B2B电子商务</a>
+					<a href="http://www.gougoujp.com/" target="_blank">雅虎日本</a>
+					<a href="http://www.cunan.com" target="_blank">伊宅购村安商城</a>
+					<a href="http://www.qqqnm.com" target="_blank">海淘攻略</a>
+					<a href="http://www.geihui.com" target="_blank">给惠网</a>
+					<a href="http://www.paixie.net/zhishi/" target="_blank">拍鞋百科</a>
+					<a href="http://www.91lai.com" target="_blank">代购</a>
+					<a href="http://www.letao-cn.com/" target="_blank">日本代购</a>
+					<a href="http://www.shelive.net/" target="_blank">穿衣搭配网</a>
+					<a href="http://www.hbrc.com/" target="_blank">石家庄招聘</a>
+					<a href="http://www.vmall.com/" target="_blank">华为商城</a>
+					<a href="http://www.wbiao.cn" target="_blank">万表网官网</a>
+					<a href="http://www.nahuo.com/" target="_blank">服装批发</a>
+					<a href="http://www.aiuw.com/" target="_blank">装修</a>
+					<a href="http://www.zhe800.com/" target="_blank">9.9包邮</a>
+					<a href="http://www.xbiao.com" target="_blank">手表品牌大</a>
+					<a href="http://www.eelly.com/" target="_blank">衣联网</a>
+					<a href="http://www.ef43.com.cn" target="_blank">中国丽人网</a>
+					<a href="http://www.wed114.cn/" target="_blank">婚纱摄影</a>
+					<a href="http://www.quanmama.com/" target="_blank">优惠券网站</a>
+					<a href="http://www.city8.com" target="_blank">中国街景地图 </a>
+					<a href="http://www.chinapp.com/" target="_blank">中国品牌网</a>
+					<a href="http://www.99wed.com/" target="_blank">婚纱摄影</a>
+					<a href="http://www.51sole.com/" target="_blank">搜了网</a>
+					<a href="http://www.juanpi.com/" target="_blank">卷皮折扣</a>
+					<a href="http://www.zhidiy.com" target="_blank">纸艺网</a>
+					<a href="http://www.liebiao.com/" target="_blank">分类信息网</a>
+					<a href="http://hzp.onlylady.com/" target="_blank">化妆品品牌大全</a>
+					<a href="http://www.jufengshang.com" target="_blank">手表网</a>
+					<a href="http://www.taofen8.com/" target="_blank">淘粉吧</a>
+					<a href="http://www.bestb2b.com/" target="_blank">志趣网</a>
+					<a href="http://www.jiukuaiyou.com/" target="_blank">九块邮</a>
+					<a href="http://www.darryring.com/" target="_blank">DR</a>
+					<a href="http://www.cnxz.cn/" target="_blank">中国鞋网</a>
+					<a href="http://www.shoes.net.cn/" target="_blank">环球鞋网</a>
+					<a href="http://www.liwuyou.com/" target="_blank">生日礼物网</a>
+					<a href="http://www.moonbasa.com/" target="_blank">品牌女装</a>
+					<a href="http://www.xbaixing.com/" target="_blank">百姓网</a>
+					<a href="http://www.huangye88.com" target="_blank">中国供求信息网</a>
+					<a href="http://www.tnc.com.cn/" target="_blank">纺织网 </a>
+					<a href="http://www.234.cn/" target="_blank">儿童玩具</a>
+					<a href="http://www.kidsnet.cn/" target="_blank">童装加盟网</a>
+					<a href="http://www.7dapei.com/" target="_blank"> 穿衣搭配网</a>
+					<a href="http://www.efu.com.cn/ " target="_blank">中国服装网</a>
+					<a href="http://www.1688ru.com" target="_blank">中亚商务网</a>
+					<a href="http://www.longfeng.com/" target="_blank">龙凤商城</a>
+					<a href="http://www.chinaleather.org/" target="_blank">中国皮革网</a>
+					<a href="http://www.sodao.com" target="_blank">免费试用</a>
+					<a href="http://www.love616.com" target="_blank">服饰搭配</a>
+					<a href="http://www.78.cn/" target="_blank">投资开店</a>
+					<a href="http://www.ickd.cn/" target="_blank" rel="nofollow">爱查快递</a>
+					<a href="http://www.hunt007.com/" target="_blank">找工易</a>
+					<a href="http://www.1000tuan.com/" target="_blank">千团网</a>
+					<a href="http://www.paixie.net/link.html" rel="nofollow" target="_blank">更多&gt;</a>
+				</div>
+				<div class="foot_link_img">
+					<a href="javascript:;" class="investment"></a>
+					<a href="javascript:;" class="ecommerce"></a>
+					<a href="javascript:;" class="alipay"></a>
+					<a href="javascript:;" class="scouring"></a>
+					<a href="javascript:;" class="honesty"></a>
+					<a href="javascript:;" class="commerce"></a>
+					<a href="javascript:;" class="report"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

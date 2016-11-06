@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单结算</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/shopingcar.css">
+	<link rel="stylesheet" href="../css/order.css">
+	<script type="text/javascript" src="../js/jQuery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" scr="../js/jQuery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/order.js"></script>
+</head>
+<body>
+<!-- head -->
+	<div class="cart_area_header">
+		<div class="w980" style="width: 1200px;">
+			<a href="../index.html" target="_blank" class="logo"></a>
+			<p>
+				<span id="js-user-info">
+					欢迎您，jedi！ 
+					<a href="/member/index" target="_blank">[会员管理]</a> 
+					<a class="loginout" href="/login?act=loginout">[安全退出]</a>
+				</span>
+				<ins class="step2">
+					<span class="one">1.选择商品</span>
+					<span class="two">2.确认订单信息</span>
+					<span class="three">3.成功提交订单</span>
+				</ins>
+			</p>
+		</div>
+		<i></i>
+	</div>
+	<!-- address -->
+	<div style="display: block;" id="js_trolly">
+		<h2 style="display: block;" class="yh w980 hide weight">填写收货地址</h2>
+		<div class="area_add_address w980">
+			<div class="address_box">
+				<div class="line">
+					<span class="red">* </span>
+					<b>所在地区</b><span>：</span>
+					<div style="z-index: 100;" class="select">
+						<input value="" type="hidden">
+						<span title="请选择...">请选择...</span>
+						<i></i>&nbsp;
+						<ul style="z-index: 100;">
+							
+						</ul>
+					</div>
+					<strong style="display: none;" class="hide">市：</strong>
+					<div style="display: none;" class="select hide">
+						<input value="" type="hidden">
+						<span>请选择...</span>
+						<i></i>&nbsp;
+						<ul>
+								
+						</ul>
+					</div>
+					<strong style="display: none;" class="hide">区：</strong>
+					<div style="display: none;" class="select hide">
+						<input value="" type="hidden">
+						<span>请选择...</span>
+						<i></i>&nbsp;
+						<ul>
+							
+						</ul>
+					</div>
+					<strong>邮政编码：</strong>
+					<input style="width:98px;" class="text js-zipcode" type="text">
+				</div>
+				<div class="line">
+					<span class="red">* </span>
+					<b>街道地址</b><span>：</span>
+					<input style="width:626px;" class="text js-address" type="text">
+				</div>
+				<div class="line">
+					<span class="red">* </span>
+					<b style="letter-spacing:0;margin-right:4px;">收货人姓名</b><span>：</span>
+					<input class="text js-name" type="text">
+				</div>
+				<div class="line">
+					<span class="red">* </span>
+					<b>手机号码</b><span>：</span>
+					<input class="text js-phone" type="text">
+					<span class="gray1">为能够顺利送达商品，请填写正确的手机号</span>
+				</div>
+				<div class="line">
+					<span>&nbsp;</span>
+					<b>设置默认</b><span>：</span>
+					<input class="checkbox js-isdefault" type="checkbox">
+					<span class="gray1">设置后系统将在购买时自动选中该收货地址</span>
+				</div>
+			</div>
+			<a class="light_button">确&nbsp;定<i></i></a>
+		</div>
+	</div>
+	<!-- pay way -->
+	<h2 class="yh w980 weight">选择支付方式</h2>
+	<div class="w980 area_paytype" id="js-area-paytype">
+		<p class="checked">
+			<input class="radio on" onclick="psbc_change()" value="1" name="pay" id="js-pay-1" type="radio">
+			<label for="js-pay-1" class="cw_zx" title="在线支付">&nbsp;</label>
+ 			<span class="xspan">支持支付宝、银联在线支付、财付通及绝大多数银行借记卡和部分银行信用卡</span> 
+			<i class="gray2">
+				订单提交后，您可以选择以下银行及支付方式进行支付：
+				<b>
+					<s>交通银行</s>
+					<s>中国农业银行</s>
+					<s>中国工商银行</s>
+					<s>中国建设银行</s>
+					<s>招商银行</s>
+					<s>中国民生银行</s>
+					<s style=" position:relative;">中国光大银行</s>
+					<s>广东发展银行</s>
+					<s style=" position:relative;">中信银行</s>
+					<s>宁波银行</s>
+					<s>中国银行</s>
+					<s>上海银行</s>
+					<s>兴业银行</s>
+					<s>富滇银行</s>
+					<s>杭州银行</s>
+					<s>平安银行</s>
+					<s>上海浦东发展银行</s>
+					<s style=" position:relative">邮储银行</s>
+					<s>北京农村商业银行</s>
+				</b>
+				<em>银联在线支付、支付宝、财付通、支付宝扫码支付</em>
+			</i>
+		</p>
+		<p>
+			<input disabled="" class="radio thefour nots" onclick="psbc_change()" value="4" name="pay" id="js-pay-4" type="radio">
+			<label for="js-pay-4" class="cw_hd gray1" title="货到付款">&nbsp;</label>
+			<span class="red xspan"><span style="color:red;">订单中包含不支持货到付款商品。</span></span>
+		</p>
+		<p style="display:none">
+			<input class="radio" value="5" name="pay" id="js-pay-5" type="radio">
+			<label for="js-pay-5">银行转账</label>
+			<span class="gray1">您需要先去银行转帐，所购商品将在款项到达拍鞋网帐户后发出</span>
+			<i class="gray2">
+				订单提交成功——3天内去银行柜台进行转帐——转帐成功后，请联系客服（4008-81-82-83）<br>
+				一般情况下，银行汇款到账通常需要2~3个工作日的时间，我们将在汇款到帐后为您发货。<br>
+				<span class="gray1">您可以在任一家银行向以下帐户汇款：<br>
+				开户银行：中国建设银行石狮分行<br>
+				开户名称：拍鞋网（福建）网络科技有限公司<br>
+				开户账号：3500 1658 1070 5254 0694<br></span>
+				<span class="red">提醒：若您有开通网银，建议您选择“在线支付”方式，支付更加方便。</span>
+			</i>
+		</p>
+		<a class="light_button">确认支付方式&gt;&gt;<i></i></a>
+	</div>
+	<h2 class="yh w980 weight" style="padding-bottom: 10px;">
+		确认订单信息
+		<a href="/cart/index">返回修改购物车</a>
+	</h2>
+	<!-- shanpin -->
+	<div id="js-item-list">
+		<table class="w980 gray2 area_business" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<th class="lf f12" colspan="2"><i class="paixie"></i><strong>拍鞋自营</strong></th>
+				<th class="f12" width="150">单价（元）</th>
+				<th class="f12" width="100">数量</th>
+				<th class="f12" width="200">优惠（元）</th>
+				<th class="f12" width="100">小计（元）</th>
+			</tr>
+			<tr class="last">
+				<td style="padding-left:10px;" width="95">
+					<a  class="public_goodimg8080" target="_blank">
+						<img src="../img/zoom_1_m.jpg">
+					</a>
+				</td>
+				<td class="lf line19" valign="center" width="268">
+					<a class="gray2" >康踏 男子低帮系带减震轻质跑鞋  黑红 812081-W</a><br>
+					<span class="modify_colorsize" title="尺码：41码&nbsp;&nbsp;颜色：黑红">尺码：41码&nbsp;&nbsp;<br>颜色：黑红</span>
+				</td>
+				<td>
+					<strong>149.00</strong>
+				</td>
+				<td>2</td>
+				<td>--
+				</td>
+				<td style="text-align: right;padding-right: 24px;">
+					<strong class="orange">298.00</strong>
+				</td>
+			</tr>
+			<tr class="border_orange background_orange">
+				<td colspan="3" rowspan="1" class="placeholder" style="border-right:1px solid #fff;border-top:1px solid #e7e7e7;vertical-align: top; text-align:left;">
+					<span class="offers">拍鞋网自营满129元免邮！</span>	
+				</td>
+				<td class="rf" colspan="3" style="border-top:1px solid #e7e7e7;">
+					<p><strong class="">0.00</strong></p>
+					<div style="float:left">配送方式：</div>
+					<div style="width:48px;float:left" class="lf">免运费</div>
+				</td>
+			</tr>
+			<tr class="border_none background_orange">
+				<td class="rf" colspan="6">
+					<p style="width:auto;">店铺合计(含运费)：<b class="orange yh">￥298.00</b></p>
+				</td>
+			</tr></tbody>
+		</table>
+		<!--  -->
+		<table class="area_trolly w980" cellpadding="0" cellspacing="2">
+			<tbody><tr>
+				<td valign="top">
+					<div class="use_offer_card tipboxs" data-id="true">
+	                	<!--<p>请输入优惠码</p>-->
+	                	<p class="tip_title on"><i></i><a href="http://help.paixie.net/faq/info?id=102" target="_blank" id="js-select-code">[了解优惠码]</a><span>使用优惠码</span></p>
+						<div class="tip_li on">
+							<input style="color: rgb(153, 153, 153);" id="js-offer-card" class="text" type="text" placeholder="请输入优惠码">
+							<a style="background: rgb(197, 192, 192) none repeat scroll 0% 0%; color: rgb(102, 102, 102);" id="js-use-offer-card" class="button_orange">使 用</a><span class="offer_yz">&nbsp;&nbsp;请输入正确的优惠码</span>
+						</div>
+					</div>
+					<div style="margin-top:10px;" class="tipboxs" data-id="false">
+						<!-- <input type="checkbox" checked="checked" sty value="" id="js_select-gold"> -->
+						<p class="tip_title"><i></i><a href="http://help.paixie.net/faq/info?id=103" target="_blank" id="js_select_goldtip">[了解拍鞋币]</a><span>使用拍鞋币</span></p>
+						<div class="tip_li"><ul id="js-area-gold"><li><input style="padding: 2px 4px;" size="2" type="text"> 个 <span class="orange yh">￥-0.00</span><span class="gray3">&nbsp;（可用<span class="use_pxgold">0</span>个）</span></li></ul></div>
+					</div>
+					<div style="margin-top:10px;" class="tipboxs" data-id="false">
+						<p class="tip_title"><i></i><span>订单留言</span></p>
+						<div class="tip_li">
+							<textarea id="js-order-msg">选填：对本次交易的补充说明</textarea> <span class="gray1">0/100</span>
+						</div>
+					</div>
+				</td>
+				<th>
+					<div class="currency">
+						<span style="" id="js-order-minus"></span>
+							<table class="cartlist" cellpadding="0" cellspacing="0">
+							<tbody><tr style="">
+	                    		<td class="textcart" align="right" width="100">商品总金额：</td><td id="cart_shop" align="left" width="80">298.00</td>
+	                    	</tr>
+							<tr style="display: none;">
+	                    		<td class="textcart" align="right" width="100">优惠总金额：</td><td id="cart_sale" align="left" width="80">-0.00</td>
+	                    	</tr>
+							<tr style="display: none;">
+	                    		<td class="textcart" align="right" width="100">拍鞋币抵现：</td><td id="cart_bi" align="left" width="80">-0.00</td>
+	                    	</tr>
+							<tr style="display: none;">
+	                    		<td class="textcart" align="right" width="100">运费总金额：</td><td id="cart_yf" align="left" width="80">0.00</td>
+	                    	</tr>
+							<tr>
+	                    		<td class="textcart" align="right" width="100">可获得拍鞋币：</td><td align="left" width="80"><span id="js-get-pxgold">298</span>个</td>
+		                    </tr>
+	                    	<tr style="display: none;">
+	                    		<td class="textcart" align="right" width="100">手续费：</td><td id="cart_sx" align="left" width="80">0.00</td>
+	                    	</tr>
+	                    </tbody></table>
+						<span class="linebox"></span>
+	                    <span class="gray3 yh" style="font-size:18px;color:#333">应付金额：</span><strong class="yh orange" id="js-total-text">￥298.00</strong>
+	                    <span class="linenot"></span>
+					</div>
+					<div class="clear"></div>
+					<a id="js_submit_order" title="提交订单">提交订单</a>
+					<!-- <a href="/cart/index" class="goback">&lt;&lt;返回购物车</a> -->			
+			</th>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+	<div class="area_cart_footer" style="margin-top: 0px;">
+		<div class="w980">
+			<p>
+				<strong class="yh"><i></i>关于运费</strong>
+				<span class="gray1">拍鞋自营满129元免运费</span><br><a target="_blank" href="http://help.paixie.net/freight.html">更多运费信息</a>
+			</p>
+			<p>
+				<strong class="yh"><i></i>退换货政策</strong>
+				<span class="gray1">拍鞋网提供15天无理由免邮退换货服务</span><br><a target="_blank" href="http://help.paixie.net/shipping.html">查看具体信息</a>
+			</p>
+			<p>
+				<strong class="yh"><i></i>客户服务</strong>
+				<span class="gray1">需要帮助？请拨打</span><b class="orange">4008-81-82-83</b><br><span class="gray1">服务时间 8:00-23:30</span>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
